@@ -46,11 +46,11 @@ const nextConfig: NextConfig = {
             // Revisit with a nonce-based approach once both GHL and Meta support it.
             value: [
               "default-src 'self'",
-              `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''} https://api.leadconnectorhq.com https://connect.facebook.net https://js.stripe.com`,
+              `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''} https://api.leadconnectorhq.com https://connect.facebook.net`,
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "font-src 'self' https://fonts.gstatic.com",
               "img-src 'self' data: https://www.facebook.com",
-              "frame-src https://api.leadconnectorhq.com https://checkout.stripe.com",
+              "frame-src https://api.leadconnectorhq.com",
               "connect-src 'self' https://api.leadconnectorhq.com https://www.facebook.com https://connect.facebook.net",
               "media-src 'self' https://assets.cdn.filesafe.space",
             ].join('; '),

@@ -3,7 +3,6 @@ import HeroImage from '@/components/HeroImage'
 import TwoColumn from '@/components/TwoColumn'
 import PriceBlock from '@/components/PriceBlock'
 import IncludesList from '@/components/IncludesList'
-import CheckoutCTA from '@/components/CheckoutCTA'
 import GHLCalendar from '@/components/GHLCalendar'
 import ScrollReveal from '@/components/ScrollReveal'
 import styles from '@/styles/package.module.css'
@@ -20,11 +19,6 @@ export const metadata: Metadata = {
 }
 
 export default function NetworkPage() {
-  const stripeLink = process.env.NEXT_PUBLIC_STRIPE_NETWORK_LINK || '#'
-  if (process.env.NODE_ENV === 'development' && !process.env.NEXT_PUBLIC_STRIPE_NETWORK_LINK) {
-    console.warn('[NetworkPage] NEXT_PUBLIC_STRIPE_NETWORK_LINK is not set — checkout button will be disabled')
-  }
-
   return (
     <>
       {/* Hero */}
@@ -83,17 +77,6 @@ export default function NetworkPage() {
           </div>
         </section>
       </div>
-
-      {/* Checkout */}
-      <ScrollReveal>
-        <CheckoutCTA
-          href={stripeLink}
-          label="JOIN THE NETWORK"
-          price="€2,000 / year"
-          headline="Join the network."
-          subline="Prefer to speak first? Book 15 minutes with the founder."
-        />
-      </ScrollReveal>
 
       {/* Founder call */}
       <GHLCalendar

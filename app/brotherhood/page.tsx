@@ -3,7 +3,6 @@ import HeroImage from '@/components/HeroImage'
 import TwoColumn from '@/components/TwoColumn'
 import PriceBlock from '@/components/PriceBlock'
 import IncludesList from '@/components/IncludesList'
-import CheckoutCTA from '@/components/CheckoutCTA'
 import GHLCalendar from '@/components/GHLCalendar'
 import ScrollReveal from '@/components/ScrollReveal'
 import styles from '@/styles/package.module.css'
@@ -20,11 +19,6 @@ export const metadata: Metadata = {
 }
 
 export default function BrotherhoodPage() {
-  const stripeLink = process.env.NEXT_PUBLIC_STRIPE_BROTHERHOOD_LINK || '#'
-  if (process.env.NODE_ENV === 'development' && !process.env.NEXT_PUBLIC_STRIPE_BROTHERHOOD_LINK) {
-    console.warn('[BrotherhoodPage] NEXT_PUBLIC_STRIPE_BROTHERHOOD_LINK is not set — checkout button will be disabled')
-  }
-
   return (
     <>
       {/* Hero */}
@@ -87,17 +81,6 @@ export default function BrotherhoodPage() {
           </div>
         </section>
       </div>
-
-      {/* Checkout */}
-      <ScrollReveal>
-        <CheckoutCTA
-          href={stripeLink}
-          label="APPLY FOR THE BROTHERHOOD →"
-          price="€5,500 / yr"
-          headline="A serious commitment."
-          subline="Tom reviews every application personally."
-        />
-      </ScrollReveal>
 
       {/* Founder call */}
       <GHLCalendar

@@ -90,9 +90,9 @@ export default function Nav() {
   // Context-aware nav CTA
   const ctaConfig: Record<string, { label: string; href: string; mobileLabel?: string }> = {
     '/':            { label: 'ENTER →',   href: '/#tiers', mobileLabel: '' },
-    '/saloon':      { label: 'RESERVE →', href: '/saloon#checkout' },
-    '/network':     { label: 'JOIN →',    href: '/network#checkout' },
-    '/brotherhood': { label: 'APPLY →',   href: '/brotherhood#checkout' },
+    '/saloon':      { label: 'RESERVE →', href: '/saloon#call' },
+    '/network':     { label: 'JOIN →',    href: '/network#call' },
+    '/brotherhood': { label: 'APPLY →',   href: '/brotherhood#call' },
   }
   const cta = ctaConfig[pathname] ?? { label: 'ENTER →', href: '/#tiers', mobileLabel: '' }
 
