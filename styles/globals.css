@@ -1,0 +1,211 @@
+/* ============================================================
+   THE ENLIGHTENMENT — Global Styles
+   Design system: warm palette, sharp edges, gold metallic system
+   ============================================================ */
+
+/* --- CSS Reset & Box Model --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* --- CSS Custom Properties (Design Tokens) --- */
+:root {
+  /* Colors */
+  --color-black:       #0a0907;
+  --color-near-black:  #0a0907;  /* unified with black — depth via glows/grain, not alternating bg */
+  --color-surface:     #0e0c0a;  /* minimal elevation — nav scrolled state only */
+  --color-accent:      #6d3e1d;
+  --color-gold:        #b8924a;
+  --color-gold-light:  #d4aa6a;
+  --color-gold-dark:   #7a5c28;
+  --color-white:       #f5f0ea;
+  --color-muted:       #7a7068;
+  --color-overlay:     rgba(10, 9, 7, 0.72);
+  --color-overlay-light: rgba(10, 9, 7, 0.3);
+  --color-overlay-heavy: rgba(10, 9, 7, 0.7);
+
+  /* Typography */
+  --font-display:  var(--font-cormorant), 'Georgia', serif;
+  --font-body:     var(--font-baskerville), 'Georgia', serif;
+
+  /* Type scale (clamp: mobile → desktop) */
+  --text-display:  clamp(2.2rem, 8vw, 7rem);
+  --text-h1:       clamp(2.2rem, 5vw, 4rem);
+  --text-h2:       clamp(1.6rem, 3.5vw, 2.6rem);
+  --text-h3:       clamp(1.2rem, 2.5vw, 1.8rem);
+  --text-body:     1rem;
+  --text-small:    0.8rem;
+  --text-label:    0.7rem;
+
+  /* Spacing (8px base unit) */
+  --space-1:   0.5rem;   /* 8px  */
+  --space-2:   1rem;     /* 16px */
+  --space-3:   1.5rem;   /* 24px */
+  --space-4:   2rem;     /* 32px */
+  --space-6:   3rem;     /* 48px */
+  --space-8:   4rem;     /* 64px */
+  --space-12:  6rem;     /* 96px */
+  --space-16:  8rem;     /* 128px */
+
+  /* Section padding */
+  --section-padding: clamp(4rem, 10vw, 8rem);
+
+  /* Max content width */
+  --max-width: 1200px;
+
+  /* Transitions */
+  --transition-default:  opacity 600ms cubic-bezier(0.25, 0.1, 0.25, 1),
+                         transform 600ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  --transition-hover:    all 300ms ease;
+  --transition-nav:      background-color 400ms ease,
+                         border-color 400ms ease;
+}
+
+/* --- Base HTML --- */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.75;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Film grain overlay (fixed, pointer-events:none — pure texture) --- */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  opacity: 0.035;
+}
+
+/* --- Typography Base --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-white);
+}
+
+p {
+  line-height: 1.75;
+  color: var(--color-white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, video {
+  display: block;
+  max-width: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  background: none;
+  border: none;
+}
+
+/* --- Gold Metallic Shimmer Keyframe --- */
+@keyframes shimmer-sweep {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+/* --- Utility: Gold Rule Divider --- */
+.gold-rule {
+  height: 1px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    var(--color-gold-dark) 15%,
+    var(--color-gold-light) 50%,
+    var(--color-gold-dark) 85%,
+    transparent 100%
+  );
+  width: 100%;
+  display: block;
+}
+
+/* --- Utility: Static Metallic Gold Texture --- */
+.gold-metallic {
+  background: linear-gradient(
+    105deg,
+    var(--color-gold-dark)  0%,
+    var(--color-gold)       30%,
+    var(--color-gold-light) 50%,
+    var(--color-gold)       70%,
+    var(--color-gold-dark)  100%
+  );
+}
+
+/* --- Utility: Container --- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+}
+
+/* --- Scroll Reveal Animation Base --- */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: var(--transition-default);
+}
+
+[data-reveal][data-visible] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Anchor scroll offset — accounts for 80px fixed nav with extra breathing room --- */
+[id] {
+  scroll-margin-top: 96px;
+}
+
+/* --- Global focus-visible styles --- */
+*:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+/* --- prefers-reduced-motion support --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  [data-visible] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

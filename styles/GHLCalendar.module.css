@@ -1,0 +1,94 @@
+/* GHLCalendar.module.css */
+
+.section {
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 0%, rgba(122, 92, 40, 0.06) 0%, transparent 65%),
+    var(--color-black);
+  border-top: 1px solid var(--color-accent);
+  padding: var(--section-padding) var(--space-4);
+  scroll-margin-top: 80px;
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-4);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 0.03em;
+}
+
+.subline {
+  font-family: var(--font-body);
+  font-style: italic;
+  color: var(--color-muted);
+  font-size: var(--text-body);
+  line-height: 1.6;
+}
+
+.calendarWrapper {
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-black);
+  padding: var(--space-2);
+  width: 100%;
+  min-height: 700px;
+  position: relative;
+}
+
+@media (max-width: 480px) {
+  .calendarWrapper { min-height: 580px; }
+}
+
+/* Loading placeholder — pulsing dark state */
+.loadingPlaceholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  background-color: var(--color-black);
+  animation: calendar-pulse 1.8s ease-in-out infinite;
+}
+
+.loadingRule {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-gold),
+    transparent
+  );
+}
+
+.loadingText {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  color: var(--color-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@keyframes calendar-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+.iframe {
+  width: 100%;
+  min-height: 700px;
+  border: none;
+  display: block;
+  background-color: var(--color-black);
+}

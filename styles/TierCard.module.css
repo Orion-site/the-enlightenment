@@ -1,0 +1,123 @@
+/* TierCard.module.css */
+/* shimmer-sweep keyframe defined in globals.css */
+
+.card {
+  border: 1px solid var(--color-accent);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: border-color 200ms ease, filter 200ms ease;
+  background-color: var(--color-near-black);
+}
+
+.card:hover {
+  border-color: var(--color-gold);
+  filter: brightness(1.06);
+}
+
+/* --- Image top half --- */
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.imageWrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.50);
+  transition: opacity 400ms ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.card:hover .imageWrap::after {
+  opacity: 0;
+}
+
+.image {
+  object-fit: cover;
+  transition: filter 400ms ease;
+}
+
+.card:hover .image {
+  filter: brightness(1.08);
+}
+
+/* --- Dark panel bottom half --- */
+.panel {
+  flex: 1;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-body);
+  font-size: var(--text-h3);
+  font-weight: 400;
+  color: var(--color-white);
+  letter-spacing: 0.02em;
+}
+
+.price {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 300;
+  color: var(--color-gold);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.description {
+  font-size: var(--text-small);
+  color: var(--color-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.cta {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-white);
+  border: 1px solid var(--color-gold);
+  padding: 0.9rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  transition: border-color 300ms ease;
+}
+
+.cta:hover {
+  border-image: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light),
+    var(--color-gold-dark)
+  ) 1;
+}
+
+
+.cta:hover .ctaText {
+  background: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light) 50%,
+    var(--color-gold-dark)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-sweep 1.8s linear infinite;
+}

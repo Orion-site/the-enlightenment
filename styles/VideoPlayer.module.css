@@ -1,0 +1,129 @@
+/* VideoPlayer.module.css */
+
+.player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: var(--color-near-black);
+  overflow: hidden;
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+    105deg,
+    var(--color-gold-dark)  0%,
+    var(--color-gold)       30%,
+    var(--color-gold-light) 50%,
+    var(--color-gold)       70%,
+    var(--color-gold-dark)  100%
+  ) 1;
+}
+
+/* --- Thumbnail layer --- */
+.thumbnail {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--color-overlay-light) 0%,
+    rgba(10, 9, 7, 0.45) 100%
+  );
+  z-index: 1;
+  transition: background 300ms ease;
+}
+
+.thumbnail:hover .overlay {
+  background: rgba(10, 9, 7, 0.3);
+}
+
+/* --- Play button --- */
+.playBtn {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.playBtnInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border: 1px solid var(--color-gold);
+  background: rgba(10, 9, 7, 0.55);
+  transition:
+    background 300ms ease,
+    border-color 300ms ease;
+  /* Metallic border on hover via border-image */
+}
+
+.playBtn:hover .playBtnInner {
+  background: rgba(10, 9, 7, 0.75);
+  border-image: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light),
+    var(--color-gold-dark)
+  ) 1;
+}
+
+.playBtn:focus-visible .playBtnInner {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+}
+
+.playIcon {
+  width: 22px;
+  height: 22px;
+  color: var(--color-gold);
+  margin-left: 4px; /* optical offset — triangle reads centred */
+  transition: color 300ms ease;
+}
+
+.playBtn:hover .playIcon {
+  color: var(--color-gold-light);
+}
+
+/* --- Active video --- */
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--color-black);
+}
+
+/* --- Embed iframe (Vimeo etc.) --- */
+.embed {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* --- Desktop: slightly larger play button --- */
+@media (min-width: 768px) {
+  .playBtnInner {
+    width: 88px;
+    height: 88px;
+  }
+
+  .playIcon {
+    width: 28px;
+    height: 28px;
+    margin-left: 5px;
+  }
+}

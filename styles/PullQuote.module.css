@@ -1,0 +1,32 @@
+/* PullQuote.module.css */
+
+.wrapper {
+  padding: var(--section-padding) var(--space-4);
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.rule {
+  margin-bottom: var(--space-6);
+}
+
+.quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+  font-weight: 300;
+  color: var(--color-white);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: var(--space-4);
+}
+
+.attribution {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-muted);
+  font-variant: small-caps;
+}

@@ -1,0 +1,169 @@
+/* home.module.css — Home page specific styles */
+
+/* --- About Section (Section 3) --- */
+.aboutSection {
+  background:
+    radial-gradient(ellipse 55% 70% at 10% 50%, rgba(122, 92, 40, 0.07) 0%, transparent 70%),
+    var(--color-black);
+  position: relative;
+}
+
+.aboutSubtext {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 300;
+  color: var(--color-white);
+  opacity: 0.75;
+  text-align: right;
+  padding: var(--space-6) var(--space-4);
+  letter-spacing: 0.04em;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: block;
+}
+
+/* --- Video Section (Section 4) --- */
+.videoSection {
+  background:
+    radial-gradient(ellipse 50% 60% at 88% 0%, rgba(122, 92, 40, 0.08) 0%, transparent 65%),
+    var(--color-black);
+  padding: var(--section-padding) var(--space-4);
+}
+
+.videoSectionInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* --- Tiers Section (Section 5) --- */
+.tiersSection {
+  background:
+    radial-gradient(ellipse 80% 55% at 50% 0%, rgba(122, 92, 40, 0.07) 0%, transparent 60%),
+    var(--color-black);
+  padding: var(--section-padding) var(--space-4);
+  position: relative;
+  overflow: hidden;
+}
+
+.tiersInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.tiersSectionHeadline {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+.tiersGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  align-items: stretch;
+}
+
+.tiersGrid > * {
+  height: 100%;
+}
+
+/* --- Pull Quote Section (Section 5) — two-column: quote + Instagram CTA --- */
+.quoteSection {
+  background:
+    radial-gradient(ellipse 55% 70% at 15% 100%, rgba(122, 92, 40, 0.07) 0%, transparent 65%),
+    var(--color-black);
+}
+
+.quoteSectionInner {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--section-padding) var(--space-4);
+  gap: var(--space-8);
+}
+
+.quoteColumn {
+  flex: 1;
+}
+
+.instagramColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-4);
+  border-top: 1px solid var(--color-accent);
+  padding-top: var(--space-6);
+}
+
+.instagramLabel {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-muted);
+}
+
+.instagramLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 0.04em;
+  transition: color 300ms ease;
+}
+
+.instagramLink:hover {
+  color: var(--color-gold-light);
+}
+
+.instagramHandle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 300;
+  color: var(--color-gold);
+  letter-spacing: 0.02em;
+}
+
+.instagramArrow {
+  font-size: 0.85em;
+  color: var(--color-gold);
+  transition: transform 300ms ease;
+}
+
+.instagramLink:hover .instagramArrow {
+  transform: translateX(4px);
+}
+
+/* --- Desktop overrides --- */
+@media (min-width: 768px) {
+  .quoteSectionInner {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-12);
+  }
+
+  .instagramColumn {
+    border-top: none;
+    border-left: 1px solid var(--color-accent);
+    padding-top: 0;
+    padding-left: var(--space-8);
+  }
+
+  .tiersGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+  }
+}

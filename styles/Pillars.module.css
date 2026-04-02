@@ -1,0 +1,97 @@
+/* Pillars.module.css */
+
+.section {
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 20%, rgba(122, 92, 40, 0.06) 0%, transparent 65%),
+    var(--color-black);
+  padding: var(--section-padding) var(--space-4);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+.pillar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+  text-align: center;
+}
+
+.numeral {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 300;
+  color: var(--color-muted);
+  opacity: 0.35;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  transition: opacity 400ms ease;
+}
+
+.pillar:hover .numeral,
+.numeral.active {
+  background: linear-gradient(
+    105deg,
+    var(--color-gold-dark)  0%,
+    var(--color-gold)       25%,
+    var(--color-gold-light) 45%,
+    #f0d080                 50%,
+    var(--color-gold-light) 55%,
+    var(--color-gold)       75%,
+    var(--color-gold-dark)  100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-sweep 1.8s linear infinite;
+  opacity: 1;
+}
+
+.name {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-gold);
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-muted);
+  line-height: 1.8;
+}
+
+/* --- Desktop (min-width: 768px) --- */
+@media (min-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+    gap: 0;
+  }
+
+  .pillar {
+    padding: 0 var(--space-8);
+    align-items: center;
+    text-align: center;
+  }
+
+  .divider {
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      var(--color-gold-dark) 20%,
+      var(--color-gold) 50%,
+      var(--color-gold-dark) 80%,
+      transparent 100%
+    );
+    width: 1px;
+    align-self: stretch;
+  }
+}

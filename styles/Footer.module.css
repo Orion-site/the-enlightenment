@@ -1,0 +1,86 @@
+/* Footer.module.css */
+
+.footer {
+  background-color: var(--color-black);
+  border-top: 1px solid var(--color-accent);
+  padding: var(--space-8) var(--space-4);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  text-align: center;
+}
+
+.logo {
+  display: block;
+}
+
+.logoImg {
+  height: 96px;
+  width: auto;
+  object-fit: contain;
+}
+
+.tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-h3);
+  font-weight: 300;
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
+}
+
+.links {
+  display: none;
+}
+
+.link {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-muted);
+  transition: color 300ms ease;
+}
+
+.link:hover {
+  color: var(--color-gold);
+}
+
+.instagram {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  color: var(--color-muted);
+  letter-spacing: 0.1em;
+  transition: color 300ms ease;
+}
+
+.instagram:hover {
+  color: var(--color-gold-light);
+}
+
+.copyright {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  color: var(--color-muted);
+  letter-spacing: 0.05em;
+}
+
+/* --- Desktop (min-width: 768px) --- */
+@media (min-width: 768px) {
+  .logoImg {
+    height: 128px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-8);
+  }
+}

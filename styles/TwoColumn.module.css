@@ -1,0 +1,150 @@
+/* TwoColumn.module.css */
+
+.section {
+  width: 100%;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+}
+
+/* Image always on top on mobile */
+.imageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  grid-row: 1;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center top;
+}
+
+.textWrap {
+  padding: var(--space-8) var(--space-4);
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-4);
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-white);
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.body p + p {
+  margin-top: var(--space-3);
+}
+
+.cta {
+  display: inline-flex;
+  align-self: flex-start;
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-white);
+  border: 1px solid var(--color-accent);
+  padding: 0.8rem 1.75rem;
+  transition: border-color 300ms ease;
+  margin-top: var(--space-2);
+}
+
+.cta:hover {
+  border-image: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light),
+    var(--color-gold-dark)
+  ) 1;
+  color: var(--color-gold-light);
+}
+
+/* ---- Golden framed image overlay ---- */
+
+@property --frame-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes goldSpin {
+  to { --frame-angle: 360deg; }
+}
+
+.frameOverlay {
+  position: absolute;
+  inset: 14px;
+  pointer-events: none;
+  z-index: 2;
+  border: 1px solid;
+  border-image: linear-gradient(
+    var(--frame-angle),
+    #3a2206,
+    #7a5c28 18%,
+    #b8924a 35%,
+    #e8cc80 50%,
+    #b8924a 65%,
+    #7a5c28 82%,
+    #3a2206
+  ) 1;
+  animation: goldSpin 6s linear infinite;
+}
+
+
+/* --- Desktop (min-width: 768px) --- */
+@media (min-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    min-height: 600px;
+  }
+
+  /* Image left: image col 1, text col 2 */
+  .inner.imageLeft .imageWrap {
+    grid-column: 1;
+    grid-row: 1;
+    aspect-ratio: auto;
+    height: 100%;
+  }
+
+  .inner.imageLeft .textWrap {
+    grid-column: 2;
+    grid-row: 1;
+    padding: var(--space-12) var(--space-8);
+  }
+
+  /* Image right: text col 1, image col 2 */
+  .inner.imageRight .imageWrap {
+    grid-column: 2;
+    grid-row: 1;
+    aspect-ratio: auto;
+    height: 100%;
+  }
+
+  .inner.imageRight .textWrap {
+    grid-column: 1;
+    grid-row: 1;
+    padding: var(--space-12) var(--space-8);
+  }
+}

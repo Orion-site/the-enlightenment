@@ -1,0 +1,63 @@
+/* booked.module.css — Post-booking confirmation page */
+
+.section {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 20%, rgba(122, 92, 40, 0.08) 0%, transparent 65%),
+    var(--color-black);
+  padding: var(--section-padding) var(--space-4);
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  font-weight: 300;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.05;
+}
+
+.subline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-h3);
+  font-weight: 300;
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
+}
+
+.body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-white);
+  opacity: 0.85;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 600px;
+}
+
+.body p + p {
+  margin-top: var(--space-3);
+}
+
+.closing {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-h3);
+  color: var(--color-gold);
+  margin-top: var(--space-6);
+}

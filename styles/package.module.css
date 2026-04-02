@@ -1,0 +1,55 @@
+/* package.module.css — shared styles for Saloon / Network / Brotherhood pages */
+
+.pageSection {
+  background:
+    radial-gradient(ellipse 60% 60% at 20% 50%, rgba(122, 92, 40, 0.06) 0%, transparent 65%),
+    var(--color-black);
+  padding: var(--section-padding) var(--space-4);
+}
+
+.pageSectionDark {
+  background:
+    radial-gradient(ellipse 60% 60% at 80% 50%, rgba(122, 92, 40, 0.06) 0%, transparent 65%),
+    var(--color-black);
+  padding: var(--section-padding) var(--space-4);
+}
+
+.inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.sectionLabel {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-gold);
+  margin-bottom: var(--space-2);
+}
+
+/* --- Investment + Includes two-column layout (desktop) --- */
+.priceIncludesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .priceIncludesGrid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .priceIncludesGrid .pageSection,
+  .priceIncludesGrid .pageSectionDark {
+    padding: var(--section-padding) var(--space-8);
+  }
+
+  .priceIncludesGrid .inner {
+    max-width: 100%;
+  }
+}
+

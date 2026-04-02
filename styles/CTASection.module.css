@@ -1,0 +1,91 @@
+/* CTASection.module.css */
+/* shimmer-sweep keyframe defined in globals.css */
+
+.section {
+  background:
+    radial-gradient(ellipse 90% 80% at 50% 50%, rgba(122, 92, 40, 0.09) 0%, transparent 65%),
+    var(--color-black);
+  padding: var(--section-padding) var(--space-4);
+  text-align: center;
+}
+
+.inner {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+}
+
+.subline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-h3);
+  font-weight: 300;
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.btn {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-white);
+  border: 1px solid var(--color-gold);
+  padding: 0.9rem 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 240px;
+  transition: border-color 300ms ease;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  border-image: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light),
+    var(--color-gold-dark)
+  ) 1;
+}
+
+.btn:hover .btnText {
+  background: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light) 50%,
+    var(--color-gold-dark)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-sweep 1.8s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

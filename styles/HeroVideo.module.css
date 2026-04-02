@@ -1,0 +1,219 @@
+/* HeroVideo.module.css */
+/* shimmer-sweep keyframe defined in globals.css */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  overflow: hidden;
+  /* fallback while video loads or when poster is not yet generated */
+  background-color: var(--color-near-black);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* --- Video fill --- */
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1200ms ease;
+}
+
+.video.loaded {
+  opacity: 1;
+}
+
+/* --- Dark gradient overlay + flat 20% black darkening layer --- */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+    linear-gradient(
+      to bottom,
+      var(--color-overlay-light) 0%,
+      var(--color-overlay-heavy) 100%
+    );
+  z-index: 1;
+}
+
+/* --- Golden inset border removed per design update --- */
+
+/* --- Content (lower third) --- */
+.content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 0 var(--space-4) clamp(4rem, 12vh, 8rem);
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-3);
+  line-height: 1.05;
+  text-align: center;
+  width: 100%;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55), 0 0 40px rgba(0, 0, 0, 0.35);
+}
+
+.subline {
+  font-family: var(--font-body);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: var(--color-white);
+  opacity: 0.85;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-6);
+  max-width: 520px;
+  text-align: center;
+  width: 100%;
+  line-height: 1.6;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* --- Primary CTA (dominant — gold border with shimmer) --- */
+.ctaPrimary {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-white);
+  border: 1px solid var(--color-gold);
+  padding: 0.9rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+  transition: border-color 300ms ease;
+  white-space: nowrap;
+}
+
+.ctaPrimary:hover {
+  border-image: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light),
+    var(--color-gold-dark)
+  ) 1;
+}
+
+.ctaPrimary:hover .ctaPrimaryText {
+  background: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light) 50%,
+    var(--color-gold-dark)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-sweep 1.8s linear infinite;
+}
+
+/* --- Secondary CTA (subordinate — plain text link with draw-in underline) --- */
+.ctaSecondary {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-white);
+  opacity: 0.75;
+  position: relative;
+  white-space: nowrap;
+  transition: opacity 300ms ease;
+}
+
+.ctaSecondary::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-gold);
+  transition: width 300ms ease;
+}
+
+.ctaSecondary:hover {
+  opacity: 1;
+}
+
+.ctaSecondary:hover::after {
+  width: 100%;
+}
+
+/* --- Scroll Indicator --- */
+.scrollIndicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 400ms ease;
+}
+
+.scrollIndicator.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(
+    to bottom,
+    var(--color-gold),
+    transparent
+  );
+  animation: scroll-pulse 2s ease-in-out infinite;
+}
+
+@keyframes scroll-pulse {
+  0%   { transform: translateY(0); opacity: 1; }
+  50%  { transform: translateY(8px); opacity: 0.6; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* --- Short device fix --- */
+@media (max-height: 580px) {
+  .content { padding-bottom: 3rem; }
+}
+
+/* --- Desktop overrides --- */
+@media (min-width: 768px) {
+  .ctas {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
