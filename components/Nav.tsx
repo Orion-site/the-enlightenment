@@ -185,15 +185,6 @@ export default function Nav() {
               {link.label.toUpperCase()}
             </Link>
           ))}
-          {cta.mobileLabel !== '' && (
-            <Link
-              href={cta.href}
-              className={styles.drawerLink}
-              tabIndex={drawerOpen ? 0 : -1}
-            >
-              {cta.label}
-            </Link>
-          )}
         </nav>
       </div>
     </>

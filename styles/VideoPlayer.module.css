@@ -114,6 +114,20 @@
   border: none;
 }
 
+/* --- Mobile: half-size play button --- */
+@media (max-width: 767px) {
+  .playBtnInner {
+    width: 36px;
+    height: 36px;
+  }
+
+  .playIcon {
+    width: 11px;
+    height: 11px;
+    margin-left: 2px;
+  }
+}
+
 /* --- Desktop: slightly larger play button --- */
 @media (min-width: 768px) {
   .playBtnInner {

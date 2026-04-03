@@ -37,6 +37,7 @@ export default function HomePage() {
       {/* Section 2 — Feature Video */}
       <section className={styles.videoSection} aria-label="About The Enlightenment">
         <div className={styles.videoSectionInner}>
+          <h2 className={styles.videoSectionTitle}>Recent Brotherhood Saloon</h2>
           <ScrollReveal>
             <VideoPlayer
               src="https://assets.cdn.filesafe.space/hpKwInwbfTwt06Jy5Y9f/media/69cccb21a0e4042cefbb5ce3.mp4"

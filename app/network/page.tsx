@@ -39,6 +39,8 @@ export default function NetworkPage() {
           imageLeft={true}
           imageSrc="/te-4.jpeg"
           imageAlt="The Enlightenment Network — Madrid's private intellectual community"
+          imagePosition="center 60%"
+          framedImage
           headline="The network."
           body={
             <>

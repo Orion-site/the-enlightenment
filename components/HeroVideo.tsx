@@ -16,6 +16,17 @@ interface HeroVideoProps {
   ctas: CTA[]
 }
 
+function scrollToHash(href: string) {
+  const hash = href.includes('#') ? href.split('#')[1] : null
+  if (!hash) return false
+  const target = document.getElementById(hash)
+  if (!target) return false
+  const navHeight = (document.querySelector('nav') as HTMLElement)?.offsetHeight ?? 80
+  const top = target.getBoundingClientRect().top + window.scrollY - navHeight
+  window.scrollTo({ top, behavior: 'smooth' })
+  return true
+}
+
 export default function HeroVideo({ src, headline, subline, ctas }: HeroVideoProps) {
   const [videoLoaded, setVideoLoaded] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -58,11 +69,21 @@ export default function HeroVideo({ src, headline, subline, ctas }: HeroVideoPro
             {/* First CTA is primary (dominant) — subsequent CTAs are secondary (text link) */}
             {ctas.map((cta, i) => (
               i === 0 ? (
-                <Link key={cta.href} href={cta.href} className={styles.ctaPrimary}>
+                <Link
+                  key={cta.href}
+                  href={cta.href}
+                  className={styles.ctaPrimary}
+                  onClick={(e) => { if (scrollToHash(cta.href)) e.preventDefault() }}
+                >
                   <span className={styles.ctaPrimaryText}>{cta.label}</span>
                 </Link>
               ) : (
-                <Link key={cta.href} href={cta.href} className={styles.ctaSecondary}>
+                <Link
+                  key={cta.href}
+                  href={cta.href}
+                  className={styles.ctaSecondary}
+                  onClick={(e) => { if (scrollToHash(cta.href)) e.preventDefault() }}
+                >
                   {cta.label}
                 </Link>
               )

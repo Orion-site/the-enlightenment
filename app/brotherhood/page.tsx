@@ -38,6 +38,8 @@ export default function BrotherhoodPage() {
           imageLeft={false}
           imageSrc="/te-5.jpeg"
           imageAlt="The Brotherhood — the inner circle"
+          imagePosition="center 60%"
+          framedImage
           headline="The inner circle."
           body={
             <>

@@ -31,6 +31,18 @@
   margin-bottom: var(--space-2);
 }
 
+/* --- Mobile: center investment + includes sections --- */
+@media (max-width: 767px) {
+  .inner {
+    align-items: center;
+    text-align: center;
+  }
+
+  .sectionLabel {
+    text-align: center;
+  }
+}
+
 /* --- Investment + Includes two-column layout (desktop) --- */
 .priceIncludesGrid {
   display: grid;

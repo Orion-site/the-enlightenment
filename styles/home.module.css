@@ -23,6 +23,22 @@
 }
 
 /* --- Video Section (Section 4) --- */
+.videoSectionTitle {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-gold);
+  margin-bottom: var(--space-4);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .videoSectionTitle {
+    display: none;
+  }
+}
+
 .videoSection {
   background:
     radial-gradient(ellipse 50% 60% at 88% 0%, rgba(122, 92, 40, 0.08) 0%, transparent 65%),

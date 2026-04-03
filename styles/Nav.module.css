@@ -161,6 +161,25 @@
   padding-bottom: 2px;
 }
 
+/* --- Mobile: compact header + smaller hamburger icon --- */
+@media (max-width: 767px) {
+  .nav {
+    padding: 0.65rem var(--space-4);
+  }
+
+  .logo {
+    height: 32px;
+  }
+
+  .logoImg {
+    height: 32px;
+  }
+
+  .hamburgerLine {
+    width: 75%;
+  }
+}
+
 /* --- Desktop layout (min-width: 768px) --- */
 @media (min-width: 768px) {
   .desktopLinks {

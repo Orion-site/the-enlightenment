@@ -75,6 +75,21 @@
   letter-spacing: 0.05em;
 }
 
+/* --- Mobile: collapse gaps between text items, keep gap after logo --- */
+@media (max-width: 767px) {
+  .inner {
+    gap: 0;
+  }
+
+  .logo {
+    margin-bottom: var(--space-4);
+  }
+
+  .instagram {
+    min-height: 44px;
+  }
+}
+
 /* --- Desktop (min-width: 768px) --- */
 @media (min-width: 768px) {
   .footer {
