@@ -11,6 +11,10 @@
   margin-bottom: var(--space-6);
 }
 
+.ruleBottom {
+  margin-top: var(--space-6);
+}
+
 .quote {
   font-family: var(--font-display);
   font-style: italic;

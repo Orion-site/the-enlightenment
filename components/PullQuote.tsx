@@ -15,6 +15,7 @@ export default function PullQuote({ quote, attribution }: PullQuoteProps) {
           <cite className={styles.attribution}>{attribution}</cite>
         </footer>
       </blockquote>
+      <hr className={`gold-rule ${styles.ruleBottom}`} aria-hidden="true" />
     </div>
   )
 }

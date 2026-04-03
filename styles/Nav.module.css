@@ -138,12 +138,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-6);
+  gap: var(--space-3);
 }
 
 .drawerLink {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-size: clamp(1.5rem, 4.5vw, 2.625rem);
   font-weight: 300;
   color: var(--color-white);
   letter-spacing: 0.05em;
@@ -161,10 +161,22 @@
   padding-bottom: 2px;
 }
 
-/* --- Mobile: compact header + smaller hamburger icon --- */
+/* --- Mobile: compact header + smaller hamburger icon + gold divider when scrolled --- */
 @media (max-width: 767px) {
   .nav {
     padding: 0.65rem var(--space-4);
+  }
+
+  .nav.scrolled {
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--color-gold-dark) 15%,
+      var(--color-gold-light) 50%,
+      var(--color-gold-dark) 85%,
+      transparent 100%
+    ) 1;
   }
 
   .logo {

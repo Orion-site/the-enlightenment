@@ -108,6 +108,22 @@
 }
 
 
+/* --- Mobile: trigger reveal on scroll instead of hover --- */
+@media (max-width: 767px) {
+  .card.active {
+    border-color: var(--color-gold);
+    filter: brightness(1.06);
+  }
+
+  .card.active .imageWrap::after {
+    opacity: 0;
+  }
+
+  .card.active .image {
+    filter: brightness(1.08);
+  }
+}
+
 .cta:hover .ctaText {
   background: linear-gradient(
     105deg,

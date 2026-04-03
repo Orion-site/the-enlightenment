@@ -9,6 +9,20 @@
   scroll-margin-top: 80px;
 }
 
+@media (max-width: 767px) {
+  .section {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--color-gold-dark) 15%,
+      var(--color-gold-light) 50%,
+      var(--color-gold-dark) 85%,
+      transparent 100%
+    ) 1;
+  }
+}
+
 .inner {
   max-width: 860px;
   margin: 0 auto;

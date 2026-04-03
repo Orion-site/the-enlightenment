@@ -81,7 +81,7 @@ export default function SaloonPage() {
       {/* Founder call */}
       <GHLCalendar
         heading="Apply to join."
-        subline="A 15-minute conversation. No pitch."
+        subline="15 minute call to see if you're a fit."
       />
     </>
   )

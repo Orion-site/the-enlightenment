@@ -1,3 +1,6 @@
+'use client'
+
+import { useRef, useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/TierCard.module.css'
@@ -11,8 +14,24 @@ interface TierCardProps {
 }
 
 export default function TierCard({ image, title, price, description, href }: TierCardProps) {
+  const cardRef = useRef<HTMLElement>(null)
+  const [active, setActive] = useState(false)
+
+  useEffect(() => {
+    const el = cardRef.current
+    if (!el) return
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setActive(entry.isIntersecting),
+      { threshold: 0.5 }
+    )
+
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
   return (
-    <article className={styles.card}>
+    <article ref={cardRef} className={`${styles.card} ${active ? styles.active : ''}`}>
       {/* Image */}
       <div className={styles.imageWrap}>
         <Image
