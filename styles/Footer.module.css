@@ -3,7 +3,7 @@
 .footer {
   background-color: var(--color-black);
   border-top: 1px solid var(--color-accent);
-  padding: var(--space-8) var(--space-4);
+  padding: var(--space-6) var(--space-4);
 }
 
 .inner {
@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-6);
+  gap: var(--space-4);
   text-align: center;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .logoImg {
-  height: 96px;
+  height: 64px;
   width: auto;
   object-fit: contain;
 }
@@ -58,6 +58,10 @@
   color: var(--color-muted);
   letter-spacing: 0.1em;
   transition: color 300ms ease;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 0.25rem;
 }
 
 .instagram:hover {
@@ -73,8 +77,16 @@
 
 /* --- Desktop (min-width: 768px) --- */
 @media (min-width: 768px) {
+  .footer {
+    padding: var(--space-8) var(--space-4);
+  }
+
+  .inner {
+    gap: var(--space-6);
+  }
+
   .logoImg {
-    height: 128px;
+    height: 96px;
   }
 
   .links {

@@ -205,6 +205,14 @@
   100% { transform: translateY(0); opacity: 1; }
 }
 
+/* --- Mobile hero height --- */
+@media (max-width: 767px) {
+  .hero {
+    height: 75vh;
+    min-height: 500px;
+  }
+}
+
 /* --- Short device fix --- */
 @media (max-height: 580px) {
   .content { padding-bottom: 3rem; }

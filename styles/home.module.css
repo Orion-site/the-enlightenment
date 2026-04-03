@@ -122,6 +122,7 @@
   color: var(--color-white);
   letter-spacing: 0.04em;
   transition: color 300ms ease;
+  min-height: 44px;
 }
 
 .instagramLink:hover {
@@ -145,6 +146,13 @@
 
 .instagramLink:hover .instagramArrow {
   transform: translateX(4px);
+}
+
+/* --- Mobile overrides --- */
+@media (max-width: 767px) {
+  .aboutSubtext {
+    text-align: left;
+  }
 }
 
 /* --- Desktop overrides --- */

@@ -157,6 +157,14 @@
   width: 100%;
 }
 
+/* --- Mobile hero height --- */
+@media (max-width: 767px) {
+  .hero {
+    height: 75vh;
+    min-height: 480px;
+  }
+}
+
 /* --- Desktop overrides --- */
 @media (min-width: 768px) {
   .ctas {

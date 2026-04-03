@@ -56,10 +56,16 @@
 
 .name {
   font-family: var(--font-body);
-  font-size: var(--text-label);
+  font-size: clamp(0.85rem, 2.5vw, var(--text-label));
   text-transform: uppercase;
   letter-spacing: 0.22em;
   color: var(--color-gold);
+}
+
+@media (max-width: 767px) {
+  .name {
+    font-size: 0.85rem;
+  }
 }
 
 .body {

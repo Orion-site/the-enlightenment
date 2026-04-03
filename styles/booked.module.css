@@ -12,6 +12,13 @@
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .section {
+    min-height: auto;
+    padding: var(--space-10, 5rem) var(--space-4);
+  }
+}
+
 .inner {
   max-width: 700px;
   margin: 0 auto;

@@ -168,6 +168,13 @@ export default function Nav() {
         </button>
 
         <nav className={styles.drawerLinks}>
+          <Link
+            href="/"
+            className={`${styles.drawerLink} ${pathname === '/' ? styles.active : ''}`}
+            tabIndex={drawerOpen ? 0 : -1}
+          >
+            HOME
+          </Link>
           {navLinks.map((link) => (
             <Link
               key={link.href}

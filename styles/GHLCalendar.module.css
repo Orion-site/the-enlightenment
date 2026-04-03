@@ -44,8 +44,8 @@
   position: relative;
 }
 
-@media (max-width: 480px) {
-  .calendarWrapper { min-height: 580px; }
+@media (max-width: 767px) {
+  .calendarWrapper { min-height: 500px; }
 }
 
 /* Loading placeholder — pulsing dark state */
@@ -91,4 +91,8 @@
   border: none;
   display: block;
   background-color: var(--color-black);
+}
+
+@media (max-width: 767px) {
+  .iframe { min-height: 500px; }
 }
