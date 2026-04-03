@@ -55,6 +55,8 @@
   .priceIncludesGrid {
     grid-template-columns: 1fr 1fr;
     align-items: start;
+    max-width: var(--max-width);
+    margin: 0 auto;
   }
 
   .priceIncludesGrid .pageSection,
