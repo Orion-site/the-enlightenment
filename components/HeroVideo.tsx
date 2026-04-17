@@ -29,15 +29,6 @@ function scrollToHash(href: string) {
 
 export default function HeroVideo({ src, headline, subline, ctas }: HeroVideoProps) {
   const [videoLoaded, setVideoLoaded] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 60)
-    }
-    window.addEventListener('scroll', handleScroll, { passive: true })
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
 
   return (
     <section className={styles.hero} aria-label="Hero">
@@ -92,13 +83,6 @@ export default function HeroVideo({ src, headline, subline, ctas }: HeroVideoPro
         )}
       </div>
 
-      {/* Scroll indicator */}
-      <div
-        className={`${styles.scrollIndicator} ${scrolled ? styles.hidden : ''}`}
-        aria-hidden="true"
-      >
-        <div className={styles.scrollLine} />
-      </div>
     </section>
   )
 }

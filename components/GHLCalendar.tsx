@@ -35,7 +35,7 @@ export default function GHLCalendar({
             className={styles.iframe}
             style={{ overflow: 'hidden' }}
             id="CLTUl2Ny1H2FWwoPo8T9_1774982228067"
-            title="Book a 15-minute call with Tom Salters"
+            title="Book a 15-minute call with Tom Baltus"
             onLoad={() => setCalendarLoaded(true)}
           />
         </div>

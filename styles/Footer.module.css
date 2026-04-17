@@ -14,51 +14,25 @@
   padding: var(--space-6) var(--space-4);
 }
 
-
 .inner {
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-4);
+  gap: 0;
   text-align: center;
 }
 
 .logo {
   display: block;
+  margin-bottom: var(--space-4);
 }
 
 .logoImg {
-  height: 64px;
+  height: 72px;
   width: auto;
   object-fit: contain;
-}
-
-.tagline {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: var(--text-h3);
-  font-weight: 300;
-  color: var(--color-muted);
-  letter-spacing: 0.02em;
-}
-
-.links {
-  display: none;
-}
-
-.link {
-  font-family: var(--font-body);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--color-muted);
-  transition: color 300ms ease;
-}
-
-.link:hover {
-  color: var(--color-gold);
 }
 
 .instagram {
@@ -82,41 +56,4 @@
   font-size: var(--text-small);
   color: var(--color-muted);
   letter-spacing: 0.05em;
-}
-
-/* --- Mobile: collapse gaps between text items, keep gap after logo --- */
-@media (max-width: 767px) {
-  .inner {
-    gap: 0;
-  }
-
-  .logo {
-    margin-bottom: var(--space-4);
-  }
-
-  .instagram {
-    min-height: 44px;
-  }
-}
-
-/* --- Desktop (min-width: 768px) --- */
-@media (min-width: 768px) {
-  .footer {
-    padding: var(--space-8) var(--space-4);
-  }
-
-  .inner {
-    gap: var(--space-6);
-  }
-
-  .logoImg {
-    height: 96px;
-  }
-
-  .links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: var(--space-8);
-  }
 }

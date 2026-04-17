@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 import styles from '@/styles/Nav.module.css'
 
 const navLinks = [
-  { label: 'Saloon', href: '/saloon' },
+  { label: 'Salon', href: '/salon' },
   { label: 'The Network', href: '/network' },
   { label: 'The Brotherhood', href: '/brotherhood' },
 ]
@@ -89,12 +89,12 @@ export default function Nav() {
 
   // Context-aware nav CTA
   const ctaConfig: Record<string, { label: string; href: string; mobileLabel?: string }> = {
-    '/':            { label: 'ENTER →',   href: '/#tiers', mobileLabel: '' },
-    '/saloon':      { label: 'RESERVE →', href: '/saloon#call' },
+    '/':            { label: 'APPLY →',   href: '/#tiers', mobileLabel: '' },
+    '/salon':      { label: 'RESERVE →', href: '/saloon#call' },
     '/network':     { label: 'JOIN →',    href: '/network#call' },
     '/brotherhood': { label: 'APPLY →',   href: '/brotherhood#call' },
   }
-  const cta = ctaConfig[pathname] ?? { label: 'ENTER →', href: '/#tiers', mobileLabel: '' }
+  const cta = ctaConfig[pathname] ?? { label: 'APPLY →', href: '/#tiers', mobileLabel: '' }
 
   return (
     <>

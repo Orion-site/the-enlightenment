@@ -8,17 +8,17 @@ const pillars = [
   {
     numeral: 'I',
     name: 'Ownership',
-    body: 'We do not wait for permission. We build, we decide, we own the outcome. Every gentleman here is the author of his life.',
+    body: 'We own the outcome. Every man here is the author of his life.',
   },
   {
     numeral: 'II',
     name: 'Reason',
-    body: 'Clarity over chaos. We think before we act. Every conversation here is deliberate.',
+    body: 'Clarity over chaos. Every conversation is deliberate.',
   },
   {
     numeral: 'III',
     name: 'Potential',
-    body: 'We hold each other to the highest standard — not out of competition, but brotherhood. This is a safe, unsafe environment.',
+    body: 'We hold each other to the highest standard. Brotherhood demands it.',
   },
 ]
 

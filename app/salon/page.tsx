@@ -8,23 +8,23 @@ import ScrollReveal from '@/components/ScrollReveal'
 import styles from '@/styles/package.module.css'
 
 export const metadata: Metadata = {
-  title: 'The Saloon — The Enlightenment Madrid',
+  title: 'The Salon — The Enlightenment Madrid',
   description: 'One evening. One standard. €300.',
   openGraph: {
-    title: 'The Saloon — The Enlightenment Madrid',
+    title: 'The Salon — The Enlightenment Madrid',
     description: 'One evening. One standard. €300.',
     type: 'website',
-    images: [{ url: '/te-2.jpeg', width: 1200, height: 630, alt: 'The Saloon — The Enlightenment' }],
+    images: [{ url: '/te-2.jpeg', width: 1200, height: 630, alt: 'The Salon — The Enlightenment' }],
   },
 }
 
-export default function SaloonPage() {
+export default function SalonPage() {
   return (
     <>
       {/* Hero */}
       <HeroImage
         src="/te-3.jpeg"
-        headline="The Saloon"
+        headline="The Salon"
         subline="Your first evening in the room."
         imagePosition="center 60%"
         cta={{
@@ -38,7 +38,7 @@ export default function SaloonPage() {
         <TwoColumn
           imageLeft={false}
           imageSrc="/te-1.jpeg"
-          imageAlt="The Saloon — an evening among gentlemen"
+          imageAlt="The Salon — an evening among gentlemen"
           framedImage
           headline="One evening. One standard."
           body={

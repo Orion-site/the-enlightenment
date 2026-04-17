@@ -25,7 +25,7 @@ export default function NetworkPage() {
       <HeroImage
         src="/te-4.jpeg"
         imagePosition="center 40%"
-        headline="The Enlightenment Network"
+        headline="The Network"
         subline="Madrid's private intellectual network."
         cta={{
           label: 'JOIN THE NETWORK →',
@@ -45,7 +45,7 @@ export default function NetworkPage() {
           body={
             <>
               <p>The Enlightenment Network is the foundation. Five Gentleman Salons a year, private dinners, curated sports events, and an active WhatsApp community of Madrid&apos;s most capable entrepreneurs.</p>
-              <p>100 members. No exceptions on standard. No exceptions on commitment.</p>
+              <p>Membership is intentionally limited. No exceptions on standard. No exceptions on commitment.</p>
             </>
           }
         />

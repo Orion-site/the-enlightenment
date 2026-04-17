@@ -10,19 +10,11 @@ export default function Footer() {
           <Image
             src="/small.png"
             alt="The Enlightenment"
-            width={100}
-            height={32}
+            width={140}
+            height={44}
             className={styles.logoImg}
           />
         </Link>
-
-        <p className={styles.tagline}>Enter with intention.</p>
-
-        <nav className={styles.links} aria-label="Footer navigation">
-          <Link href="/saloon" className={styles.link}>Saloon</Link>
-          <Link href="/network" className={styles.link}>The Network</Link>
-          <Link href="/brotherhood" className={styles.link}>The Brotherhood</Link>
-        </nav>
 
         <a
           href="https://www.instagram.com/te.madrid"

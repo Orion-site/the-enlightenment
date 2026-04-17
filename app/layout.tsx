@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     template: '%s | The Enlightenment',
     default: "The Enlightenment — Madrid's Private Gentlemen's Network",
   },
-  description: 'Enter with intention. A private network for entrepreneurs in Madrid.',
+  description: 'A private network for gentlemen who lead. Madrid.',
   openGraph: {
     type: 'website',
     siteName: 'The Enlightenment',
     title: "The Enlightenment — Madrid's Private Gentlemen's Network",
-    description: 'Enter with intention. A private network for entrepreneurs in Madrid.',
+    description: 'A private network for gentlemen who lead. Madrid.',
     images: [{ url: '/te-1.jpeg', width: 1200, height: 630, alt: 'The Enlightenment' }],
   },
 }
