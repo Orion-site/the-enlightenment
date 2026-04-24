@@ -58,7 +58,7 @@ export default function HomePage() {
             imageSrc="/te-2.jpeg"
             imageAlt="The Enlightenment  -  Madrid's private network"
             imagePosition="center 40%"
-            headline='"The room you don\u2019t find. You\u2019re invited to."'
+            headline={"“The room you don’t find. You’re invited to.”"}
             body={
               <>
                 <p>We are a private gentlemen&rsquo;s network of entrepreneurs, founders, and leaders. Located in the heart of Madrid, we gather to build, to think, and to hold each other to an uncommon standard.</p>

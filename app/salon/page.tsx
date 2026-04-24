@@ -69,19 +69,6 @@ export default function SalonPage() {
             {/* Poster card */}
             <ScrollReveal>
               <div className={s.posterCard}>
-                <div className={s.posterStats}>
-                  {[
-                    { num: '3',    label: 'Speakers'  },
-                    { num: '50',   label: 'Founders'  },
-                    { num: '∞',    label: 'Open Bar'  },
-                  ].map((stat) => (
-                    <div key={stat.label} className={s.posterStat}>
-                      <span className={s.posterStatNum}>{stat.num}</span>
-                      <span className={s.posterStatLabel}>{stat.label}</span>
-                    </div>
-                  ))}
-                </div>
-
                 <ol className={s.posterList}>
                   {includesItems.map((item, i) => (
                     <li key={i} className={s.posterListItem}>

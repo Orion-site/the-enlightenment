@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from 'react'
 import { type ReactNode } from 'react'
 import Link from 'next/link'
 import styles from '@/styles/HeroVideo.module.css'
@@ -20,6 +19,7 @@ interface HeroVideoProps {
   ctas: CTA[]
   badge?: ReactNode
   pill?: HeroPill
+  center?: boolean
 }
 
 function scrollToHash(href: string) {
@@ -33,16 +33,13 @@ function scrollToHash(href: string) {
   return true
 }
 
-export default function HeroVideo({ src, headline, subline, ctas, badge, pill }: HeroVideoProps) {
-  const [videoLoaded, setVideoLoaded] = useState(false)
-
+export default function HeroVideo({ src, headline, subline, ctas, badge, pill, center }: HeroVideoProps) {
   return (
-    <section className={styles.hero} aria-label="Hero">
+    <section className={`${styles.hero} ${center ? styles.centered : ''}`} aria-label="Hero">
       <video
-        className={`${styles.video} ${videoLoaded ? styles.loaded : ''}`}
+        className={styles.video}
         autoPlay muted loop playsInline preload="auto"
         poster="/te-1.jpeg" aria-hidden="true"
-        onCanPlay={() => setVideoLoaded(true)}
       >
         <source src={src} type="video/mp4" />
       </video>

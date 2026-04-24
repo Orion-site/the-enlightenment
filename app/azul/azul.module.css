@@ -39,7 +39,7 @@
 
 .sectionHeadline {
   font-family: var(--font-display);
-  font-size: var(--text-h1);
+  font-size: clamp(1.8rem, 5vw, 3.6rem);
   font-weight: 300;
   color: var(--color-white);
   letter-spacing: 0.01em;
@@ -47,10 +47,10 @@
 }
 
 .sectionSubline {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-style: italic;
-  font-size: var(--text-h3);
-  font-weight: 300;
+  font-size: var(--text-body);
+  font-weight: 400;
   color: var(--color-muted);
   margin-top: var(--space-1);
 }
@@ -128,7 +128,7 @@
 
 .badgeEyebrow {
   font-family: var(--font-body);
-  font-size: 0.58rem;
+  font-size: 0.68rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--color-gold);
@@ -137,9 +137,9 @@
 }
 
 .badgeDate {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 300;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 400;
   color: var(--color-white);
   line-height: 1;
   white-space: nowrap;
@@ -148,7 +148,7 @@
 
 .badgeMeta {
   font-family: var(--font-body);
-  font-size: 0.65rem;
+  font-size: 0.68rem;
   color: var(--color-muted);
   letter-spacing: 0.04em;
   white-space: nowrap;
@@ -195,7 +195,7 @@
   }
 
   .badgeDate {
-    font-size: 0.95rem;
+    font-size: 0.68rem;
   }
 
   .badgeMeta {
@@ -218,9 +218,10 @@
 .detailsGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-6) var(--space-4);
+  gap: var(--space-3);
   max-width: var(--max-width);
   margin: 0 auto;
+  align-items: stretch;
 }
 
 /* Venue spans full width on mobile — most text */
@@ -229,7 +230,7 @@
 @media (min-width: 768px) {
   .detailsGrid {
     grid-template-columns: repeat(5, 1fr);
-    gap: var(--space-4);
+    gap: var(--space-3);
   }
   .detailsCell:nth-child(3) { grid-column: auto; }
 }
@@ -237,27 +238,33 @@
 .detailsCell {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: var(--space-2);
   text-align: center;
+  background: #100d0b;
+  border: 1px solid rgba(184, 146, 74, 0.18);
+  padding: var(--space-4) var(--space-3);
+  transition: border-color 500ms ease, box-shadow 500ms ease, filter 500ms ease;
+}
+
+.detailsCell:hover {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 24px rgba(184, 146, 74, 0.14);
+  filter: brightness(1.06);
 }
 
 .detailsLabel {
   font-family: var(--font-body);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.22em;
   color: var(--color-gold);
 }
 
 .detailsValue {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: var(--text-body);
   color: var(--color-white);
-  line-height: 1.3;
-}
-
-@media (min-width: 768px) {
-  .detailsValue { font-size: var(--text-h3); }
+  line-height: 1.6;
 }
 
 .detailsNote {
@@ -296,6 +303,13 @@
   flex-direction: column;
   gap: var(--space-5, 2.5rem);
   height: 100%;
+  transition: border-color 500ms ease, box-shadow 500ms ease, filter 500ms ease;
+}
+
+.icpCard:hover {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 32px rgba(184, 146, 74, 0.14);
+  filter: brightness(1.06);
 }
 
 .icpCardTop {
@@ -316,7 +330,7 @@
   font-family: var(--font-body);
   font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   color: var(--color-gold);
 }
 
@@ -457,9 +471,9 @@
   background: rgba(184, 146, 74, 0.07);
   border-top: 1px solid rgba(184, 146, 74, 0.28);
   padding: var(--space-4) var(--space-6);
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-style: italic;
-  font-size: var(--text-h3);
+  font-size: var(--text-body);
   font-weight: 300;
   color: var(--color-gold-light);
   letter-spacing: 0.02em;
@@ -500,11 +514,13 @@
   margin-bottom: var(--space-2);
 }
 
-/* ─── Agenda section (INVERTED — ivory band) ─────────────────────────────────── */
+/* ─── Agenda section ─────────────────────────────────────────────────────────── */
 
 .agendaSection {
-  background: var(--color-white);
+  background: #0c0a08;
   padding: var(--section-padding) var(--space-4);
+  border-top: 1px solid rgba(184, 146, 74, 0.12);
+  border-bottom: 1px solid rgba(184, 146, 74, 0.12);
 }
 
 .agendaInner {
@@ -512,36 +528,10 @@
   margin: 0 auto;
 }
 
-.agendaEyebrow {
-  font-family: var(--font-body);
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.22em;
-  color: var(--color-accent);
-  margin-bottom: var(--space-2);
-}
-
-.agendaHeadline {
-  font-family: var(--font-display);
-  font-size: var(--text-h2);
-  font-weight: 300;
-  color: var(--color-black);
-  line-height: 1.1;
-}
-
-.agendaSubline {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: var(--text-h3);
-  font-weight: 300;
-  color: var(--color-accent);
-  margin-top: var(--space-2);
-  margin-bottom: var(--space-8);
-}
-
 .agendaTable {
   display: flex;
   flex-direction: column;
+  margin-top: var(--space-2);
 }
 
 .agendaRow {
@@ -549,10 +539,10 @@
   flex-direction: column;
   gap: var(--space-1);
   padding: var(--space-4) 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(184, 146, 74, 0.12);
 }
 
-.agendaRow:first-child { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+.agendaRow:first-child { border-top: 1px solid rgba(184, 146, 74, 0.12); }
 
 @media (min-width: 768px) {
   .agendaRow {
@@ -564,10 +554,10 @@
 
 .agendaTime {
   font-family: var(--font-body);
-  font-size: var(--text-label);
+  font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--color-accent);
+  letter-spacing: 0.22em;
+  color: var(--color-gold);
   flex-shrink: 0;
   min-width: 140px;
 }
@@ -575,7 +565,9 @@
 .agendaMoment {
   font-family: var(--font-body);
   font-size: var(--text-body);
-  color: var(--color-black);
+  color: var(--color-white);
+  opacity: 0.85;
+  line-height: 1.6;
 }
 
 /* ─── Standards section ──────────────────────────────────────────────────────── */
@@ -609,18 +601,18 @@
 
 .finalCtaHeadline {
   font-family: var(--font-display);
-  font-size: var(--text-h1);
-  font-weight: 600;
+  font-size: clamp(1.8rem, 5vw, 3.6rem);
+  font-weight: 300;
   color: var(--color-white);
   letter-spacing: 0.02em;
   line-height: 1.05;
 }
 
 .finalCtaSubline {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-style: italic;
-  font-size: var(--text-h3);
-  font-weight: 300;
+  font-size: var(--text-body);
+  font-weight: 400;
   color: var(--color-muted);
   letter-spacing: 0.02em;
   margin-bottom: var(--space-2);

@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 // MetaPixel self-disables when NEXT_PUBLIC_META_PIXEL_ID is not set
 import MetaPixel from '@/components/MetaPixel'
 import PageTransition from '@/components/PageTransition'
+import Preloader from '@/components/Preloader'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -46,7 +47,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${baskerville.variable}`}>
-      <body>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link rel="preconnect" href="https://assets.cdn.filesafe.space" />
+        <link rel="dns-prefetch" href="https://api.leadconnectorhq.com" />
+      </head>
+      <body suppressHydrationWarning>
+        <Preloader />
         <MetaPixel />
         <Nav />
         <main>

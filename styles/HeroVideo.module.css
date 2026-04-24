@@ -14,6 +14,14 @@
   justify-content: center;
 }
 
+.hero.centered {
+  align-items: center;
+}
+
+.hero.centered .content {
+  padding: 0 var(--space-4);
+}
+
 /* --- Video fill --- */
 .video {
   position: absolute;
@@ -21,11 +29,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0;
-  transition: opacity 1200ms ease;
-}
-
-.video.loaded {
   opacity: 1;
 }
 

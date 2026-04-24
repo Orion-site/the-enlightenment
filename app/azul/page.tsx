@@ -59,11 +59,11 @@ const details = [
   { label: 'Date',     value: 'Thursday 29 May 2026' },
   { label: 'Time',     value: '19:30 - 23:00' },
   { label: 'Venue',    value: 'Salon Azul - Only You Madrid - C/ Barquillo, 21' },
-  { label: 'Dress',    value: 'Suit required. No ties.' },
+  { label: 'Dress',    value: 'Suit required.' },
   { label: 'Capacity', value: '50 founders' },
 ]
 
-const STRIPE = 'https://buy.stripe.com/28EcN501L73W2c90ula7C0d'
+const STRIPE = 'https://buy.stripe.com/eVq8wP9Clag8dUR4KBa7C08'
 
 export default function AzulPage() {
   return (
@@ -84,6 +84,7 @@ export default function AzulPage() {
         ctas={[
           { label: 'SECURE YOUR SEAT →', href: STRIPE },
         ]}
+        center
       />
 
       {/* ── 2. VSL ────────────────────────────────────────────────────────────── */}
@@ -128,9 +129,6 @@ export default function AzulPage() {
             </div>
           ))}
         </div>
-        <p className={s.detailsNote}>
-          Pre-event podcast taping at the venue - 18:00 - 18:45 - members only.
-        </p>
       </section>
 
       {/* ── 5. Who this is for ────────────────────────────────────────────────── */}
@@ -219,7 +217,7 @@ export default function AzulPage() {
             <ScrollReveal delay={120}>
               <div className={s.priceBox}>
                 <p className={s.eyebrow}>◆ INVESTMENT</p>
-                <p className={s.priceAmount}>€300</p>
+                <p className={s.priceAmount}>€125</p>
                 <p className={s.pricePeriod}>One evening - Salon 06</p>
                 <p className={s.priceScarcity}>50 seats - limited release</p>
                 <a href={STRIPE} className={s.stripeBtn} data-cta="azul-price">
@@ -235,9 +233,11 @@ export default function AzulPage() {
       <section className={s.agendaSection} aria-label="Programme">
         <div className={s.agendaInner}>
           <ScrollReveal>
-            <p className={s.agendaEyebrow}>◆ THE EVENING</p>
-            <h2 className={s.agendaHeadline}>The programme.</h2>
-            <p className={s.agendaSubline}>A night engineered for momentum.</p>
+            <div className={s.sectionHeader}>
+              <p className={s.eyebrow}>◆ THE EVENING</p>
+              <h2 className={s.sectionHeadline}>The programme.</h2>
+              <p className={s.sectionSubline}>A night engineered for momentum.</p>
+            </div>
           </ScrollReveal>
           <ScrollReveal delay={100}>
             <div className={s.agendaTable} role="list">
@@ -252,21 +252,6 @@ export default function AzulPage() {
         </div>
       </section>
 
-      {/* ── 9. Standards + Pillars ───────────────────────────────────────────── */}
-      <section className={s.standardsSection} aria-label="Our principles">
-        <div className={s.sectionInner}>
-          <ScrollReveal>
-            <div className={s.sectionHeader}>
-              <p className={s.eyebrow}>◆ THE STANDARD</p>
-              <h2 className={s.sectionHeadline}>We live by three principles.</h2>
-              <p className={s.sectionSubline}>
-                Suit required. No ties. No small talk. No spectators.
-              </p>
-            </div>
-          </ScrollReveal>
-        </div>
-        <Pillars />
-      </section>
 
       {/* ── 10. Final CTA ────────────────────────────────────────────────────── */}
       <section className={s.finalCta} aria-label="Final call to action">
