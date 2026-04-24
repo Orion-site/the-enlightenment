@@ -1,0 +1,326 @@
+/* network.module.css */
+
+.page {
+  background-color: var(--color-black);
+}
+
+/* ─── Shared section inner ───────────────────────────────────────────────────── */
+.sectionInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-8);
+  max-width: 760px;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-gold);
+  margin-bottom: var(--space-2);
+}
+
+.sectionHeadline {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 300;
+  color: var(--color-white);
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+}
+
+/* ─── What You Get ───────────────────────────────────────────────────────────── */
+.includesSection {
+  background: #0c0a08;
+  padding: var(--section-padding) 0;
+}
+
+.includesPriceGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 900px) {
+  .includesPriceGrid {
+    grid-template-columns: 1fr 380px;
+    align-items: start;
+    gap: var(--space-8);
+  }
+}
+
+/* Poster card */
+.posterCard {
+  background: #100d0b;
+  border: 1px solid rgba(184, 146, 74, 0.2);
+  overflow: hidden;
+}
+
+.posterStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid rgba(184, 146, 74, 0.15);
+}
+
+.posterStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-4) var(--space-2);
+  border-right: 1px solid rgba(184, 146, 74, 0.1);
+  text-align: center;
+}
+
+.posterStat:last-child { border-right: none; }
+
+.posterStatNum {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 300;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.posterStatLabel {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-muted);
+  margin-top: 0.4rem;
+}
+
+.posterList {
+  padding: var(--space-5, 2.5rem) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+.posterListItem {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(184, 146, 74, 0.08);
+  padding-bottom: var(--space-3);
+}
+
+.posterListItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posterNum {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  color: var(--color-gold);
+  opacity: 0.7;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.posterItemText {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-white);
+  opacity: 0.82;
+  line-height: 1.6;
+}
+
+.posterBanner {
+  background: rgba(184, 146, 74, 0.07);
+  border-top: 1px solid rgba(184, 146, 74, 0.28);
+  padding: var(--space-4) var(--space-6);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-h3);
+  font-weight: 300;
+  color: var(--color-gold-light);
+  letter-spacing: 0.02em;
+}
+
+/* Price box */
+.priceBox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  border: 1px solid rgba(184, 146, 74, 0.18);
+  background: #100d0b;
+}
+
+.priceAmount {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  font-weight: 300;
+  color: var(--color-white);
+  line-height: 1;
+  margin-top: var(--space-2);
+}
+
+.pricePeriod {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-muted);
+}
+
+.priceScarcity {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-gold);
+  opacity: 0.7;
+}
+
+/* ─── Stripe CTA button ──────────────────────────────────────────────────────── */
+.stripeBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(12, 10, 8, 0.45);
+  border: 1px solid var(--color-gold);
+  padding: 0.9rem 2rem;
+  margin-top: var(--space-2);
+  text-decoration: none;
+  transition: border-color 300ms ease;
+  white-space: nowrap;
+}
+
+.stripeBtn:hover {
+  border-image: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light),
+    var(--color-gold-dark)
+  ) 1;
+}
+
+.stripeBtnText {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-white);
+}
+
+/* ─── Questions / Calendar section ──────────────────────────────────────────── */
+.questionsSection {
+  background: #0c0a08;
+  padding: var(--section-padding) 0;
+}
+
+.questionsInner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-4);
+}
+
+.questionsHeadline {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 0.04em;
+  line-height: 1.15;
+}
+
+.questionsSubline {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-muted);
+  letter-spacing: 0.03em;
+  max-width: 480px;
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-gold-dark),
+    transparent
+  );
+  margin: var(--space-2) auto;
+}
+
+/* ─── Final CTA ──────────────────────────────────────────────────────────────── */
+.finalCta {
+  background: #0c0a08;
+  padding: var(--section-padding) 0;
+  border-top: 1px solid rgba(184, 146, 74, 0.12);
+}
+
+.finalCtaInner {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-4);
+}
+
+.finalCtaHeadline {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+}
+
+.finalCtaSubline {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-muted);
+  letter-spacing: 0.03em;
+}
+
+/* ─── Mobile ─────────────────────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .sectionInner {
+    padding: 0 10px;
+  }
+
+  .sectionHeader {
+    text-align: center;
+    align-items: center;
+  }
+
+  .posterList {
+    padding: var(--space-4) 10px;
+  }
+
+  .posterBanner {
+    padding: var(--space-3) 10px;
+    text-align: center;
+  }
+
+  .priceBox {
+    padding: var(--space-4) 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .questionsInner {
+    padding: 0 10px;
+  }
+}

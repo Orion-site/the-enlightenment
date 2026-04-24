@@ -27,13 +27,13 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://the-enlightenment.salon'),
   title: {
     template: '%s | The Enlightenment',
-    default: "The Enlightenment — Madrid's Private Gentlemen's Network",
+    default: "The Enlightenment  -  Madrid's Private Gentlemen's Network",
   },
   description: 'A private network for gentlemen who lead. Madrid.',
   openGraph: {
     type: 'website',
     siteName: 'The Enlightenment',
-    title: "The Enlightenment — Madrid's Private Gentlemen's Network",
+    title: "The Enlightenment  -  Madrid's Private Gentlemen's Network",
     description: 'A private network for gentlemen who lead. Madrid.',
     images: [{ url: '/te-1.jpeg', width: 1200, height: 630, alt: 'The Enlightenment' }],
   },

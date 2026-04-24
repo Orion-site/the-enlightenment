@@ -1,0 +1,614 @@
+/* azul.module.css — Salon 06 landing page
+   Warm-black palette (#0c0a08), restrained gold, leadestate-inspired rhythm
+   shimmer-sweep keyframe lives in globals.css */
+
+/* ─── Page wrapper (warm background override) ───────────────────────────────── */
+
+.page {
+  background-color: #0c0a08;
+}
+
+/* ─── Shared layout ──────────────────────────────────────────────────────────── */
+
+.sectionInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* ─── Eyebrow label (◆ SECTION NAME) ────────────────────────────────────────── */
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-gold);
+  margin-bottom: var(--space-2);
+}
+
+/* ─── Shared section header block ────────────────────────────────────────────── */
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-8);
+  max-width: 760px;
+}
+
+.sectionHeadline {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 0.01em;
+  line-height: 1.08;
+}
+
+.sectionSubline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-h3);
+  font-weight: 300;
+  color: var(--color-muted);
+  margin-top: var(--space-1);
+}
+
+/* ─── Stripe CTA button ──────────────────────────────────────────────────────── */
+
+.stripeBtn {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-white);
+  border: 1px solid var(--color-gold);
+  padding: 1rem 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: border-color 300ms ease, background 300ms ease;
+  white-space: nowrap;
+  text-decoration: none;
+  background: transparent;
+}
+
+@media (min-width: 480px) {
+  .stripeBtn {
+    width: auto;
+    min-width: 260px;
+  }
+}
+
+.stripeBtn:hover {
+  background: rgba(184, 146, 74, 0.06);
+  border-image: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light),
+    var(--color-gold-dark)
+  ) 1;
+}
+
+.stripeBtn:hover .stripeBtnText {
+  background: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light) 50%,
+    var(--color-gold-dark)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer-sweep 1.8s linear infinite;
+}
+
+.stripeBtn:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+}
+
+.centeredCta {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-10, 5rem);
+}
+
+/* ─── Hero badge card ────────────────────────────────────────────────────────── */
+
+.badgeCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.badgeEyebrow {
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gold);
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.badgeDate {
+  font-family: var(--font-display);
+  font-size: var(--text-h3);
+  font-weight: 300;
+  color: var(--color-white);
+  line-height: 1.1;
+}
+
+.badgeVenue {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  color: var(--color-muted);
+  letter-spacing: 0.04em;
+}
+
+.badgeCapacity {
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  color: var(--color-muted);
+  letter-spacing: 0.04em;
+}
+
+/* ─── VSL section ────────────────────────────────────────────────────────────── */
+
+.vslSection {
+  background: #0c0a08;
+  padding: var(--section-padding) 0;
+  text-align: center;
+}
+
+.vslSection .sectionInner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 960px;
+}
+
+.vslHeadline {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 300;
+  color: var(--color-white);
+  margin-top: var(--space-1);
+}
+
+.vslSubcopy {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-muted);
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 767px) {
+  .vslSubcopy { display: none; }
+}
+
+/* ─── Event details strip ────────────────────────────────────────────────────── */
+
+.detailsStrip {
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 50%, rgba(184, 146, 74, 0.055) 0%, transparent 65%),
+    #0c0a08;
+  padding: var(--section-padding) var(--space-4);
+  border-top: 1px solid rgba(184, 146, 74, 0.12);
+  border-bottom: 1px solid rgba(184, 146, 74, 0.12);
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6) var(--space-4);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Venue spans full width on mobile — most text */
+.detailsCell:nth-child(3) { grid-column: 1 / -1; }
+
+@media (min-width: 768px) {
+  .detailsGrid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--space-4);
+  }
+  .detailsCell:nth-child(3) { grid-column: auto; }
+}
+
+.detailsCell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: center;
+}
+
+.detailsLabel {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-gold);
+}
+
+.detailsValue {
+  font-family: var(--font-display);
+  font-size: var(--text-body);
+  color: var(--color-white);
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .detailsValue { font-size: var(--text-h3); }
+}
+
+.detailsNote {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  color: var(--color-muted);
+  margin-top: var(--space-6);
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ─── ICP section ────────────────────────────────────────────────────────────── */
+
+.icpSection {
+  background: #0c0a08;
+  padding: var(--section-padding) 0;
+}
+
+.icpGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .icpGrid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.icpCard {
+  background: #100d0b;
+  border: 1px solid rgba(184, 146, 74, 0.18);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5, 2.5rem);
+  height: 100%;
+}
+
+.icpCardTop {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.icpNumeral {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--color-gold);
+  opacity: 0.35;
+  line-height: 1;
+}
+
+.icpLabel {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-gold);
+}
+
+.icpBody {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-muted);
+  line-height: 1.75;
+}
+
+/* ─── Includes section ───────────────────────────────────────────────────────── */
+
+.includesSection {
+  background: #0c0a08;
+  padding: var(--section-padding) 0;
+}
+
+.includesPriceGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 900px) {
+  .includesPriceGrid {
+    grid-template-columns: 1fr 380px;
+    align-items: start;
+    gap: var(--space-8);
+  }
+}
+
+@media (max-width: 767px) {
+  .includesSection .sectionInner {
+    padding: 0 10px;
+  }
+
+  .includesSection .sectionHeader {
+    text-align: center;
+    align-items: center;
+  }
+
+  .posterList {
+    padding: var(--space-4) 10px;
+  }
+
+  .posterBanner {
+    padding: var(--space-3) 10px;
+    text-align: center;
+  }
+
+  .priceBox {
+    padding: var(--space-4) 10px;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Poster card */
+.posterCard {
+  background: #100d0b;
+  border: 1px solid rgba(184, 146, 74, 0.2);
+  overflow: hidden;
+}
+
+.posterStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid rgba(184, 146, 74, 0.15);
+}
+
+.posterStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-4) var(--space-2);
+  border-right: 1px solid rgba(184, 146, 74, 0.1);
+  text-align: center;
+}
+
+.posterStat:last-child { border-right: none; }
+
+.posterStatNum {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 300;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.posterStatLabel {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-muted);
+  margin-top: 0.4rem;
+}
+
+.posterList {
+  padding: var(--space-5, 2.5rem) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+.posterListItem {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(184, 146, 74, 0.08);
+  padding-bottom: var(--space-3);
+}
+
+.posterListItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posterNum {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  color: var(--color-gold);
+  opacity: 0.7;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.posterItemText {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-white);
+  opacity: 0.82;
+  line-height: 1.6;
+}
+
+.posterBanner {
+  background: rgba(184, 146, 74, 0.07);
+  border-top: 1px solid rgba(184, 146, 74, 0.28);
+  padding: var(--space-4) var(--space-6);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-h3);
+  font-weight: 300;
+  color: var(--color-gold-light);
+  letter-spacing: 0.02em;
+}
+
+/* Price box */
+.priceBox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  border: 1px solid rgba(184, 146, 74, 0.18);
+  background: #100d0b;
+}
+
+.priceAmount {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  font-weight: 300;
+  color: var(--color-white);
+  line-height: 1;
+  margin-top: var(--space-2);
+}
+
+.pricePeriod {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-muted);
+}
+
+.priceScarcity {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-gold);
+  opacity: 0.7;
+  margin-bottom: var(--space-2);
+}
+
+/* ─── Agenda section (INVERTED — ivory band) ─────────────────────────────────── */
+
+.agendaSection {
+  background: var(--color-white);
+  padding: var(--section-padding) var(--space-4);
+}
+
+.agendaInner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.agendaEyebrow {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+
+.agendaHeadline {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 300;
+  color: var(--color-black);
+  line-height: 1.1;
+}
+
+.agendaSubline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-h3);
+  font-weight: 300;
+  color: var(--color-accent);
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-8);
+}
+
+.agendaTable {
+  display: flex;
+  flex-direction: column;
+}
+
+.agendaRow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.agendaRow:first-child { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+@media (min-width: 768px) {
+  .agendaRow {
+    flex-direction: row;
+    align-items: baseline;
+    gap: var(--space-6);
+  }
+}
+
+.agendaTime {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-accent);
+  flex-shrink: 0;
+  min-width: 140px;
+}
+
+.agendaMoment {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-black);
+}
+
+/* ─── Standards section ──────────────────────────────────────────────────────── */
+
+.standardsSection {
+  background: #0c0a08;
+  padding-top: var(--section-padding);
+}
+
+/* Pillars component adds its own section with internal padding */
+
+/* ─── Final CTA ──────────────────────────────────────────────────────────────── */
+
+.finalCta {
+  background:
+    radial-gradient(ellipse 80% 70% at 50% 50%, rgba(122, 92, 40, 0.1) 0%, transparent 65%),
+    #0c0a08;
+  padding: var(--section-padding) var(--space-4);
+  text-align: center;
+  border-top: 1px solid rgba(184, 146, 74, 0.12);
+}
+
+.finalCtaInner {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.finalCtaHeadline {
+  font-family: var(--font-display);
+  font-size: var(--text-h1);
+  font-weight: 600;
+  color: var(--color-white);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+}
+
+.finalCtaSubline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-h3);
+  font-weight: 300;
+  color: var(--color-muted);
+  letter-spacing: 0.02em;
+  margin-bottom: var(--space-2);
+}

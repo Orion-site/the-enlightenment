@@ -1,7 +1,7 @@
 'use client'
 
-// MetaPixel.tsx — Client component for Meta Pixel base code
-// Reads NEXT_PUBLIC_META_PIXEL_ID — self-disables when env var is empty
+// MetaPixel.tsx  -  Client component for Meta Pixel base code
+// Reads NEXT_PUBLIC_META_PIXEL_ID  -  self-disables when env var is empty
 // TODO: uncomment tracking calls below when pixel ID is confirmed and ad campaigns are live
 
 import { usePathname } from 'next/navigation'
@@ -26,7 +26,7 @@ export default function MetaPixel() {
     <>
       {/*
         SECURITY NOTE: This inline script requires 'unsafe-inline' in the CSP script-src directive.
-        The PIXEL_ID is validated as a numeric string before use (see guard above) — this prevents
+        The PIXEL_ID is validated as a numeric string before use (see guard above)  -  this prevents
         XSS injection via the env var. The 'unsafe-inline' exception is acceptable for this
         marketing site as there is no user-generated content that could be injected.
         When Meta Pixel is activated, ensure NEXT_PUBLIC_META_PIXEL_ID is a verified pixel ID.

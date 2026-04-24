@@ -16,6 +16,7 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
   const pathname = usePathname()
+  if (pathname === '/azul') return null
   const drawerCloseRef = useRef<HTMLButtonElement>(null)
   const hamburgerRef = useRef<HTMLButtonElement>(null)
   const drawerRef = useRef<HTMLDivElement>(null)
@@ -90,7 +91,7 @@ export default function Nav() {
   // Context-aware nav CTA
   const ctaConfig: Record<string, { label: string; href: string; mobileLabel?: string }> = {
     '/':            { label: 'APPLY →',   href: '/#tiers', mobileLabel: '' },
-    '/salon':      { label: 'RESERVE →', href: '/saloon#call' },
+    '/salon':      { label: 'RESERVE →', href: 'https://buy.stripe.com/28EcN501L73W2c90ula7C0d' },
     '/network':     { label: 'JOIN →',    href: '/network#call' },
     '/brotherhood': { label: 'APPLY →',   href: '/brotherhood#call' },
   }
@@ -104,7 +105,7 @@ export default function Nav() {
         aria-label="Main navigation"
       >
         {/* Logo */}
-        <Link href="/" className={styles.logo} aria-label="The Enlightenment — Home">
+        <Link href="/" className={styles.logo} aria-label="The Enlightenment  -  Home">
           <Image
             src="/big.png"
             alt="The Enlightenment"
@@ -128,12 +129,12 @@ export default function Nav() {
           ))}
         </div>
 
-        {/* Desktop CTA — context-aware per page */}
+        {/* Desktop CTA  -  context-aware per page */}
         <Link href={cta.href} className={`${styles.ctaBtn} ${styles.enterBtn}`}>
           <span className={styles.enterBtnText}>{cta.label}</span>
         </Link>
 
-        {/* Mobile Hamburger — hidden when drawer is open so it doesn't float over the overlay */}
+        {/* Mobile Hamburger  -  hidden when drawer is open so it doesn't float over the overlay */}
         <button
           ref={hamburgerRef}
           className={`${styles.hamburger} ${drawerOpen ? styles.hamburgerHidden : ''}`}

@@ -26,7 +26,7 @@ export default function Pillars() {
   const numeralRefs = useRef<(HTMLSpanElement | null)[]>([])
 
   useEffect(() => {
-    // Only run scroll-trigger on mobile — desktop uses CSS :hover
+    // Only run scroll-trigger on mobile  -  desktop uses CSS :hover
     if (window.matchMedia('(min-width: 768px)').matches) return
 
     const observers: IntersectionObserver[] = []
@@ -54,7 +54,7 @@ export default function Pillars() {
   return (
     <section className={styles.section} aria-label="Our three pillars">
       <div className={styles.inner}>
-        {/* Visually hidden h2 for heading hierarchy — screen reader heading navigation */}
+        {/* Visually hidden h2 for heading hierarchy  -  screen reader heading navigation */}
         <h2 style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>Our Three Pillars</h2>
         {pillars.map((pillar, i) => (
           <Fragment key={pillar.numeral}>

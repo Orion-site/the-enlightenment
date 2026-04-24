@@ -15,7 +15,7 @@ export default function ScrollReveal({ children, className, delay = 0 }: ScrollR
     const el = ref.current
     if (!el) return
 
-    // Respect prefers-reduced-motion — immediately reveal without animation
+    // Respect prefers-reduced-motion  -  immediately reveal without animation
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       el.setAttribute('data-visible', 'true')
       return

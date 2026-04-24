@@ -1,0 +1,178 @@
+/* confirmed.module.css — post-payment confirmation page
+   shimmer-sweep keyframe is defined in globals.css */
+
+.page {
+  background-color: #0c0a08;
+  min-height: 100svh;
+  padding: clamp(5rem, 12vw, 8rem) 10px var(--space-8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  max-width: 560px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.monogram {
+  opacity: 0.85;
+  margin-bottom: var(--space-2);
+}
+
+/* Eyebrow */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-gold);
+}
+
+/* Headline */
+.headline {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  font-weight: 600;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+/* Receipt line */
+.receiptLine {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-h3);
+  font-weight: 300;
+  color: var(--color-gold-light);
+  letter-spacing: 0.02em;
+}
+
+/* Sub-headline */
+.subline {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-muted);
+  max-width: 400px;
+  line-height: 1.65;
+}
+
+/* What happens next card */
+.nextCard {
+  background: #100d0b;
+  border: 1px solid rgba(184, 146, 74, 0.2);
+  padding: var(--space-4) 10px;
+  width: 100%;
+  text-align: left;
+  margin-top: var(--space-2);
+}
+
+.nextCardEyebrow {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-gold);
+  margin-bottom: var(--space-4);
+}
+
+.nextList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.nextItem {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-muted);
+  line-height: 1.65;
+  border-bottom: 1px solid rgba(184, 146, 74, 0.08);
+  padding-bottom: var(--space-4);
+}
+
+.nextItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.nextNum {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  color: var(--color-gold);
+  opacity: 0.65;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.emailLink {
+  color: var(--color-gold-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Instagram CTA */
+.igBtn {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-white);
+  border: 1px solid var(--color-gold);
+  padding: 0.9rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  transition: border-color 300ms ease, background 300ms ease;
+  text-decoration: none;
+}
+
+.igBtn:hover {
+  background: rgba(184, 146, 74, 0.06);
+  border-image: linear-gradient(
+    105deg,
+    var(--color-gold-dark),
+    var(--color-gold-light),
+    var(--color-gold-dark)
+  ) 1;
+}
+
+.igBtn:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.igIcon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Bottom strip */
+.bottomStrip {
+  background: #0c0a08;
+  text-align: center;
+  padding: var(--space-8) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.closing {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--text-h2);
+  font-weight: 300;
+  color: var(--color-white);
+}

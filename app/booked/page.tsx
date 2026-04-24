@@ -3,7 +3,7 @@ import ScrollReveal from '@/components/ScrollReveal'
 import styles from '@/styles/booked.module.css'
 
 export const metadata: Metadata = {
-  title: 'Your Conversation Is Confirmed — The Enlightenment',
+  title: 'Your Conversation Is Confirmed  -  The Enlightenment',
   description: 'Your call with the founder of The Enlightenment is confirmed.',
 }
 

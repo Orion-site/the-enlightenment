@@ -62,14 +62,13 @@
 
 .headline {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 5vw, 5rem);
+  font-size: clamp(1.8rem, 5vw, 3.6rem);
   font-weight: 300;
   color: var(--color-white);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: var(--space-3);
-  line-height: 1.05;
-  white-space: nowrap;
+  line-height: 1.1;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55), 0 0 40px rgba(0, 0, 0, 0.35);
 }
 
@@ -103,6 +102,7 @@
   text-transform: uppercase;
   letter-spacing: 0.18em;
   color: var(--color-white);
+  background: rgba(12, 10, 8, 0.45);
   border: 1px solid var(--color-gold);
   padding: 0.9rem 2rem;
   display: inline-flex;
@@ -205,6 +205,87 @@
   100% { transform: translateY(0); opacity: 1; }
 }
 
+/* --- Badge (floating event credential card — bottom right of hero) --- */
+.badge {
+  position: absolute;
+  bottom: clamp(5rem, 14vh, 9rem);
+  right: var(--space-6);
+  z-index: 3;
+  background: rgba(12, 10, 8, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(184, 146, 74, 0.32);
+  padding: var(--space-3) var(--space-4);
+  min-width: 210px;
+}
+
+@media (max-width: 767px) {
+  .badge { display: none; }
+}
+
+/* --- Video preview pill (above CTAs) --- */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid rgba(184, 146, 74, 0.4);
+  background: rgba(12, 10, 8, 0.45);
+  padding: 0.45rem 1rem 0.45rem 0.6rem;
+  margin-bottom: var(--space-4);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: border-color 300ms ease, background 300ms ease;
+}
+
+.pill:hover {
+  border-color: var(--color-gold);
+  background: rgba(12, 10, 8, 0.65);
+}
+
+.pillIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.pillIcon svg { color: #0c0a08; }
+
+.pillLabel { color: var(--color-white); }
+
+.pillSep {
+  color: var(--color-gold);
+  opacity: 0.5;
+}
+
+.pillDuration { color: var(--color-muted); }
+
+/* --- Badge mobile (inline below CTA, mobile only) --- */
+.badgeMobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .badgeMobile {
+    display: block;
+    margin-top: var(--space-4);
+    background: rgba(12, 10, 8, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(184, 146, 74, 0.32);
+    padding: var(--space-3) var(--space-4);
+    min-width: 210px;
+    text-align: left;
+  }
+}
+
 /* --- Mobile hero height --- */
 @media (max-width: 767px) {
   .subline {
@@ -212,8 +293,9 @@
   }
 
   .hero {
-    height: 75vh;
-    min-height: 500px;
+    height: auto;
+    min-height: 100svh;
+    padding-bottom: 0;
   }
 }
 

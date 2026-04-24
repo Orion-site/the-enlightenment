@@ -9,10 +9,10 @@ import VideoPlayer from '@/components/VideoPlayer'
 import styles from '@/styles/home.module.css'
 
 export const metadata: Metadata = {
-  title: "The Enlightenment — Madrid's Private Gentlemen's Network",
+  title: "The Enlightenment  -  Madrid's Private Gentlemen's Network",
   description: 'A private network for gentlemen who lead. Madrid.',
   openGraph: {
-    title: "The Enlightenment — Madrid's Private Gentlemen's Network",
+    title: "The Enlightenment  -  Madrid's Private Gentlemen's Network",
     description: 'A private network for gentlemen who lead. Madrid.',
     type: 'website',
     images: [{ url: '/te-1.jpeg', width: 1200, height: 630, alt: 'The Enlightenment' }],
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      {/* Section 1 — Hero Video */}
+      {/* Section 1  -  Hero Video */}
       <HeroVideo
         src="/heroloop.mp4"
         headline="The Enlightenment"
@@ -32,7 +32,7 @@ export default function HomePage() {
         ]}
       />
 
-      {/* Section 2 — Feature Video */}
+      {/* Section 2  -  Feature Video */}
       <section className={styles.videoSection} aria-label="About The Enlightenment">
         <div className={styles.videoSectionInner}>
           <h2 className={styles.videoSectionTitle}>Recent Brotherhood Salon</h2>
@@ -40,23 +40,23 @@ export default function HomePage() {
             <VideoPlayer
               src="https://assets.cdn.filesafe.space/hpKwInwbfTwt06Jy5Y9f/media/69cccb21a0e4042cefbb5ce3.mp4"
               poster="/TEtb.png"
-              label="Watch — The Enlightenment"
+              label="Watch  -  The Enlightenment"
             />
           </ScrollReveal>
         </div>
       </section>
 
-      {/* Section 3 — Three Pillars */}
+      {/* Section 3  -  Three Pillars */}
       <Pillars />
 
-      {/* Section 4 — About */}
+      {/* Section 4  -  About */}
       <hr className="gold-rule" aria-hidden="true" />
       <section className={styles.aboutSection}>
         <ScrollReveal>
           <TwoColumn
             imageLeft={false}
             imageSrc="/te-2.jpeg"
-            imageAlt="The Enlightenment — Madrid's private network"
+            imageAlt="The Enlightenment  -  Madrid's private network"
             imagePosition="center 40%"
             headline='"The room you don\u2019t find. You\u2019re invited to."'
             body={
@@ -71,7 +71,7 @@ export default function HomePage() {
         <span className={styles.aboutSubtext}>Madrid. By invitation only.</span>
       </section>
 
-      {/* Section 5 — Tiers */}
+      {/* Section 5  -  Tiers */}
       <section className={styles.tiersSection} id="tiers" aria-label="Membership tiers">
         <div className={styles.tiersInner}>
           <h2 className={styles.tiersSectionHeadline}>Choose your entry.</h2>
@@ -81,7 +81,7 @@ export default function HomePage() {
                 image="/te-3.jpeg"
                 title="The Salon"
                 price="€300"
-                description="Your first evening in the room. One paid Salon — no commitment."
+                description="Your first evening in the room. One paid Salon  -  no commitment."
                 href="/salon"
               />
             </ScrollReveal>
@@ -107,7 +107,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Section 6 — Final CTA */}
+      {/* Section 6  -  Final CTA */}
       <ScrollReveal>
         <CTASection
           headline="Be committed."

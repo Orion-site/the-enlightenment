@@ -15,6 +15,7 @@ interface TwoColumnProps {
   className?: string
   imagePosition?: string
   framedImage?: boolean
+  hideImageMobile?: boolean
 }
 
 export default function TwoColumn({
@@ -27,12 +28,13 @@ export default function TwoColumn({
   className,
   imagePosition,
   framedImage,
+  hideImageMobile,
 }: TwoColumnProps) {
   return (
     <section className={`${styles.section} ${className ?? ''}`}>
       <div className={`${styles.inner} ${imageLeft ? styles.imageLeft : styles.imageRight}`}>
         {/* Image */}
-        <div className={styles.imageWrap}>
+        <div className={`${styles.imageWrap} ${hideImageMobile ? styles.imageHideMobile : ''}`}>
           <Image
             src={imageSrc}
             alt={imageAlt}

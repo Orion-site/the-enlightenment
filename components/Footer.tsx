@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer} role="contentinfo">
       <div className={styles.inner}>
-        <Link href="/" className={styles.logo} aria-label="The Enlightenment — Home">
+        <Link href="/" className={styles.logo} aria-label="The Enlightenment  -  Home">
           <Image
             src="/small.png"
             alt="The Enlightenment"

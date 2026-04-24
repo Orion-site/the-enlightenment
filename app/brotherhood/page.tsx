@@ -8,13 +8,13 @@ import ScrollReveal from '@/components/ScrollReveal'
 import styles from '@/styles/package.module.css'
 
 export const metadata: Metadata = {
-  title: 'The Brotherhood — The Enlightenment Madrid',
+  title: 'The Brotherhood  -  The Enlightenment Madrid',
   description: '15 men. The inner circle. By application only.',
   openGraph: {
-    title: 'The Brotherhood — The Enlightenment Madrid',
+    title: 'The Brotherhood  -  The Enlightenment Madrid',
     description: '15 men. The inner circle. By application only.',
     type: 'website',
-    images: [{ url: '/te-6.jpeg', width: 1200, height: 630, alt: 'The Brotherhood — The Enlightenment' }],
+    images: [{ url: '/te-6.jpeg', width: 1200, height: 630, alt: 'The Brotherhood  -  The Enlightenment' }],
   },
 }
 
@@ -37,21 +37,21 @@ export default function BrotherhoodPage() {
         <TwoColumn
           imageLeft={false}
           imageSrc="/te-5.jpeg"
-          imageAlt="The Brotherhood — the inner circle"
+          imageAlt="The Brotherhood  -  the inner circle"
           imagePosition="center 60%"
           framedImage
           headline="The inner circle."
           body={
             <>
               <p>The Brotherhood is not open to the public. It is earned.</p>
-              <p>Fifteen men. Monthly masterminds. Private Salons with a higher intellectual standard. A room where you cannot drift — because every man in it will not allow it.</p>
+              <p>Fifteen men. Monthly masterminds. Private Salons with a higher intellectual standard. A room where you cannot drift  -  because every man in it will not allow it.</p>
               <p>You are held here. And you hold others.</p>
             </>
           }
         />
       </ScrollReveal>
 
-      {/* Includes + Price — side by side on desktop */}
+      {/* Includes + Price  -  side by side on desktop */}
       <div className={styles.priceIncludesGrid}>
         <section className={styles.pageSectionDark} aria-label="What's included">
           <div className={styles.inner}>

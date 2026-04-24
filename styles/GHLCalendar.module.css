@@ -4,9 +4,16 @@
   background:
     radial-gradient(ellipse 70% 60% at 50% 0%, rgba(122, 92, 40, 0.06) 0%, transparent 65%),
     var(--color-black);
-  border-top: 1px solid var(--color-accent);
   padding: var(--section-padding) var(--space-4);
   scroll-margin-top: 80px;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-gold);
 }
 
 @media (max-width: 767px) {

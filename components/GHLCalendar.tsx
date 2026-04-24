@@ -5,11 +5,13 @@ import Script from 'next/script'
 import styles from '@/styles/GHLCalendar.module.css'
 
 interface GHLCalendarProps {
+  eyebrow?: string
   heading?: string
   subline?: string
 }
 
 export default function GHLCalendar({
+  eyebrow,
   heading = 'Speak with the founder.',
   subline = 'A 15-minute conversation. No sales pitch.',
 }: GHLCalendarProps) {
@@ -18,11 +20,12 @@ export default function GHLCalendar({
   return (
     <section className={styles.section} id="call" aria-label="Book a call with the founder">
       <div className={styles.inner}>
+        {eyebrow && <p className={styles.eyebrow}>{eyebrow}</p>}
         <h2 className={styles.heading}>{heading}</h2>
         <p className={styles.subline}>{subline}</p>
 
         <div className={styles.calendarWrapper}>
-          {/* Loading placeholder — hidden once iframe fires onLoad */}
+          {/* Loading placeholder  -  hidden once iframe fires onLoad */}
           {!calendarLoaded && (
             <div className={styles.loadingPlaceholder} aria-hidden="true">
               <div className={styles.loadingRule} />

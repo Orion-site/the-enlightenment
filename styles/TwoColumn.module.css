@@ -80,6 +80,12 @@
   color: var(--color-gold-light);
 }
 
+@media (max-width: 767px) {
+  .imageHideMobile {
+    display: none;
+  }
+}
+
 /* ---- Golden framed image overlay ---- */
 
 @property --frame-angle {
