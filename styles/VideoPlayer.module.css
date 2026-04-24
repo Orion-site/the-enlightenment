@@ -128,54 +128,53 @@
   }
 }
 
-/* --- Modal backdrop (dim layer behind popup) --- */
+/* ─── Modal — rendered via React Portal directly on document.body ─────────── */
+
 .modalBackdrop {
   position: fixed;
   inset: 0;
-  z-index: 10000;
-  background: rgba(10, 9, 7, 0.92);
+  z-index: 99999;
+  background: rgba(10, 9, 7, 0.96);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 3vw;
 }
 
-/* --- Modal popup container --- */
-.modalPopup {
+/* Portrait box: fills height, width follows 9:16 ratio */
+.modalBox {
   position: relative;
-  width: 100%;
-  max-width: min(94vw, calc(94vh * 9 / 16));
-  aspect-ratio: 9 / 16;
+  height: 90dvh;
+  width: calc(90dvh * 9 / 16);
+  max-width: 96vw;
   background: #0a0907;
-  border: 1px solid rgba(184, 146, 74, 0.3);
 }
 
-/* --- Close button — top-right corner of popup --- */
+/* Close — top-right of the backdrop, not the box */
 .modalClose {
   position: absolute;
-  top: 0.75rem;
-  right: 0.75rem;
-  width: 40px;
-  height: 40px;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 1;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(10, 9, 7, 0.85);
+  background: rgba(10, 9, 7, 0.9);
   border: 1px solid var(--color-gold);
   color: var(--color-gold);
   cursor: pointer;
-  z-index: 2;
   transition: color 300ms ease, background 300ms ease;
 }
 
 .modalClose svg {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 
 .modalClose:hover {
   color: var(--color-gold-light);
-  background: rgba(10, 9, 7, 1);
+  background: #0a0907;
 }
 
 .modalClose:focus-visible {
@@ -183,13 +182,12 @@
   outline-offset: 2px;
 }
 
-/* --- Video fills the popup --- */
 .modalVideo {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   background: #0a0907;
 }
 
@@ -199,6 +197,19 @@
   width: 100%;
   height: 100%;
   border: none;
+}
+
+@media (max-width: 767px) {
+  .modalBox {
+    height: 100dvh;
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .modalClose {
+    top: max(0.75rem, env(safe-area-inset-top));
+    right: max(0.75rem, env(safe-area-inset-right));
+  }
 }
 
 /* --- Desktop: slightly larger play button --- */
