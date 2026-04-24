@@ -78,8 +78,7 @@ export default function AzulPage() {
           <div className={s.badgeCard}>
             <span className={s.badgeEyebrow}>◆ SALON 06</span>
             <p className={s.badgeDate}>Thursday 29 May 2026</p>
-            <p className={s.badgeVenue}>Salon Azul - Madrid</p>
-            <p className={s.badgeCapacity}>50 seats - by application</p>
+            <p className={s.badgeMeta}>Salon Azul - Madrid&nbsp;&nbsp;|&nbsp;&nbsp;50 seats only</p>
           </div>
         }
         ctas={[

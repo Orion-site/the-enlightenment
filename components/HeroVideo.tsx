@@ -49,11 +49,10 @@ export default function HeroVideo({ src, headline, subline, ctas, badge, pill }:
 
       <div className={styles.overlay} aria-hidden="true" />
 
-      {badge && (
-        <div className={styles.badge} aria-hidden="true">{badge}</div>
-      )}
-
       <div className={styles.content}>
+        {badge && (
+          <div className={styles.badge}>{badge}</div>
+        )}
         <h1 className={styles.headline}>{headline}</h1>
         <p className={styles.subline}>{subline}</p>
 
@@ -92,9 +91,6 @@ export default function HeroVideo({ src, headline, subline, ctas, badge, pill }:
           </div>
         )}
 
-        {badge && (
-          <div className={styles.badgeMobile} aria-hidden="true">{badge}</div>
-        )}
       </div>
     </section>
   )

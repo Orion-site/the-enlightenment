@@ -1,0 +1,1943 @@
+{
+  "azul-mobile": {
+    "info": {
+      "navCount": 0,
+      "navs": [],
+      "footerCount": 1,
+      "footers": [
+        {
+          "text": "@te.madrid © 2026 The Enlightenment. All rights reserved.",
+          "rect": {
+            "x": 0,
+            "y": 7733.84375,
+            "width": 375,
+            "height": 289.78125,
+            "top": 7733.84375,
+            "right": 375,
+            "bottom": 8023.625,
+            "left": 0
+          },
+          "visible": true
+        }
+      ],
+      "videos": [
+        {
+          "src": "http://localhost:3000/heroloop.mp4",
+          "poster": "http://localhost:3000/te-1.jpeg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true,
+          "playsInline": true,
+          "paused": false,
+          "readyState": 4,
+          "videoWidth": 1920,
+          "videoHeight": 960,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 609,
+            "top": 0,
+            "right": 375,
+            "bottom": 609,
+            "left": 0
+          },
+          "controls": false
+        }
+      ],
+      "buttons": [
+        {
+          "tag": "a",
+          "text": "SECURE YOUR SEAT → €300",
+          "href": "#secure",
+          "visible": true,
+          "rect": {
+            "x": 42.96875,
+            "y": 461.1875,
+            "w": 289.0625,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "button",
+          "text": "",
+          "href": "",
+          "visible": true,
+          "rect": {
+            "x": 34,
+            "y": 800,
+            "w": 307,
+            "h": 170.9375
+          },
+          "color": "rgb(0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SECURE YOUR SEAT →",
+          "href": "https://buy.stripe.com/28EcN501L73W2c90ula7C0d",
+          "visible": true,
+          "rect": {
+            "x": 57.5,
+            "y": 6158.796875,
+            "w": 260,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SECURE YOUR SEAT → €300",
+          "href": "https://buy.stripe.com/28EcN501L73W2c90ula7C0d",
+          "visible": true,
+          "rect": {
+            "x": 38.96875,
+            "y": 7619.46875,
+            "w": 297.0625,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 72.953125,
+            "y": 7782.84375,
+            "w": 229.078125,
+            "h": 72
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "@te.madrid",
+          "href": "https://www.instagram.com/te.madrid",
+          "visible": true,
+          "rect": {
+            "x": 138.4375,
+            "y": 7886.84375,
+            "w": 98.125,
+            "h": 44
+          },
+          "color": "rgb(122, 112, 104)",
+          "borderColor": "rgb(122, 112, 104)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "GENTLEMEN DON'T FOLLOW STANDARDS. THEY SET THEM.",
+          "rect": {
+            "x": -258.84375,
+            "y": 323.109375,
+            "width": 892.6875,
+            "height": 30.234375,
+            "top": 323.109375,
+            "right": 633.84375,
+            "bottom": 353.34375,
+            "left": -258.84375
+          }
+        },
+        {
+          "level": "H2",
+          "text": "Two minutes with Tom & Maarten.",
+          "rect": {
+            "x": 32,
+            "y": 692.59375,
+            "width": 311,
+            "height": 61.40625,
+            "top": 692.59375,
+            "right": 343,
+            "bottom": 754,
+            "left": 32
+          }
+        },
+        {
+          "level": "H2",
+          "text": "One evening. One standard.",
+          "rect": {
+            "x": 32,
+            "y": 1478.1875,
+            "width": 311,
+            "height": 80.9375,
+            "top": 1478.1875,
+            "right": 343,
+            "bottom": 1559.125,
+            "left": 32
+          }
+        },
+        {
+          "level": "H2",
+          "text": "Built for founders who are done with the wrong rooms.",
+          "rect": {
+            "x": 32,
+            "y": 2765.875,
+            "width": 311,
+            "height": 61.40625,
+            "top": 2765.875,
+            "right": 343,
+            "bottom": 2827.28125,
+            "left": 32
+          }
+        },
+        {
+          "level": "H2",
+          "text": "The programme.",
+          "rect": {
+            "x": 32,
+            "y": 4212.25,
+            "width": 311,
+            "height": 30.703125,
+            "top": 4212.25,
+            "right": 343,
+            "bottom": 4242.953125,
+            "left": 32
+          }
+        },
+        {
+          "level": "H2",
+          "text": "We live by three principles.",
+          "rect": {
+            "x": 32,
+            "y": 6383.5625,
+            "width": 311,
+            "height": 30.703125,
+            "top": 6383.5625,
+            "right": 343,
+            "bottom": 6414.265625,
+            "left": 32
+          }
+        },
+        {
+          "level": "H2",
+          "text": "Our Three Pillars",
+          "rect": {
+            "x": 31,
+            "y": 6596.453125,
+            "width": 1,
+            "height": 1,
+            "top": 6596.453125,
+            "right": 32,
+            "bottom": 6597.453125,
+            "left": 31
+          }
+        },
+        {
+          "level": "H3",
+          "text": "OWNERSHIP",
+          "rect": {
+            "x": 125.203125,
+            "y": 6681.453125,
+            "width": 124.59375,
+            "height": 16.3125,
+            "top": 6681.453125,
+            "right": 249.796875,
+            "bottom": 6697.765625,
+            "left": 125.203125
+          }
+        },
+        {
+          "level": "H3",
+          "text": "REASON",
+          "rect": {
+            "x": 146.109375,
+            "y": 6979.359375,
+            "width": 82.78125,
+            "height": 16.3125,
+            "top": 6979.359375,
+            "right": 228.890625,
+            "bottom": 6995.671875,
+            "left": 146.109375
+          }
+        },
+        {
+          "level": "H3",
+          "text": "POTENTIAL",
+          "rect": {
+            "x": 127.984375,
+            "y": 7277.265625,
+            "width": 119.015625,
+            "height": 16.3125,
+            "top": 7277.265625,
+            "right": 247,
+            "bottom": 7293.578125,
+            "left": 127.984375
+          }
+        },
+        {
+          "level": "H2",
+          "text": "50 seats. One standard.",
+          "rect": {
+            "x": 61.78125,
+            "y": 7491.171875,
+            "width": 251.421875,
+            "height": 30.703125,
+            "top": 7491.171875,
+            "right": 313.203125,
+            "bottom": 7521.875,
+            "left": 61.78125
+          }
+        }
+      ],
+      "doc": {
+        "scrollWidth": 375,
+        "clientWidth": 375,
+        "scrollHeight": 8024,
+        "clientHeight": 812
+      },
+      "overflowing": [
+        {
+          "tag": "h1",
+          "cls": "HeroVideo-module__yzSnYa__headline",
+          "right": 633.84375,
+          "width": 892.6875,
+          "text": "GENTLEMEN DON'T FOLLOW STANDARDS. THEY S"
+        }
+      ],
+      "bodyText": "GENTLEMEN DON'T FOLLOW STANDARDS. THEY SET THEM. An evening to illuminate ideas, capital & connection. SECURE YOUR SEAT → €300 WATCH BEFORE YOU DECIDE. Two minutes with Tom & Maarten. Two minutes with Tom & Maarten. What this night is — and who it's for. One evening. One standard. Salón Azul is a jewel-box of deep navy velvet, gilded mirrors and fireplaces. Antique portraits watch over Chesterfield sofas. A room built for the kind of conversation most rooms can't hold. Fifty founders. One standing reception. Three curated speaker moments. Open bar. Jazz. A suit. No small talk, no spectators. Attend once. Decide what kind of man you are. DATE Thursday 29 May 2026 TIME 19:30 – 23:00 VENUE Salón Azul · Only You Madrid · C/ Barquillo, 21 DRESS Suit required. No ties. CAPACITY 50 founders Pre-event podcast taping at the venue · 18:00–18:45 · members only. Built for founders who are done with the wrong rooms. Three men walk into Salón Azul. These are the three. I THE ISOLATED You’ve built the business. The peers you had when you started can no longer hold the conversation. You need a room that can. II THE IDENTITY The suit, the standard, the posture — these aren’t aesthetics to you. They’re how you move. You want a room that matches. III THE BROTHERHOOD You’re tired of transactional networking. You want a few men, met in person, who will still be in your life in ten years. The programme. A night engineered for momentum. 19:30–19:50 Arrival & personal welcome · first drink served 20:00–20:05 Opening — Tom & Maarten frame the night 20:05–20:10 Speaker I — Tom sets the tone 20:10–20:50 First Connection Block — guided networking 20:50–21:00 Speaker II — sponsor insight 21:00–22:20 Open networking — peak energy · bar active 22:20–22:30 Speaker III + collective toast 22:30–23:00 Soft close WHAT'S INCLUDED 01 Open bar · welcome cocktail or whisky on arrival 02 Three curated speaker moments 03 Guided connection blocks 04 Standing reception in Salón Azul — jazz, fireplaces, Chesterfield sofas 05 Eligibility to apply for The Network INVESTMENT €300 ONE EVENING · SALON 06 50 seats · limited release SECURE YOUR SEAT → Secure checkout · Stripe · €300 · EUR We live by three principles. Suit required. No ties. No small talk. No spectators. Our Three Pillars I OWNERSHIP We own the outcome. Every man here is the author of his life. II REASON Clarity over chaos. Every conversation is deliberate. III POTENTIAL We hold each other to the highest standard. Brotherhood demands it. 50 seats. One standard. Thursday 29 May · Salón Azul · Madrid. SECURE YOUR SEAT → €300 @te.madrid © 2026 The Enlightenment. All rights reserved."
+    },
+    "errors": []
+  },
+  "confirmed-mobile": {
+    "info": {
+      "navCount": 2,
+      "navs": [
+        {
+          "tag": "nav",
+          "classes": "Nav-module__pauaAq__nav ",
+          "text": "",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 65.78125,
+            "top": 0,
+            "right": 375,
+            "bottom": 65.78125,
+            "left": 0
+          },
+          "visible": true
+        },
+        {
+          "tag": "nav",
+          "classes": "Nav-module__pauaAq__drawerLinks",
+          "text": "HOME SALON THE NETWORK THE BROTHERHOOD",
+          "rect": {
+            "x": 62.78125,
+            "y": 286,
+            "width": 249.421875,
+            "height": 240,
+            "top": 286,
+            "right": 312.203125,
+            "bottom": 526,
+            "left": 62.78125
+          },
+          "visible": true
+        }
+      ],
+      "footerCount": 1,
+      "footers": [
+        {
+          "text": "@te.madrid © 2026 The Enlightenment. All rights reserved.",
+          "rect": {
+            "x": 0,
+            "y": 857.78125,
+            "width": 375,
+            "height": 289.78125,
+            "top": 857.78125,
+            "right": 375,
+            "bottom": 1147.5625,
+            "left": 0
+          },
+          "visible": true
+        }
+      ],
+      "videos": [],
+      "buttons": [
+        {
+          "tag": "a",
+          "text": "",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 32,
+            "y": 16.390625,
+            "w": 32,
+            "h": 32
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SALON",
+          "href": "/salon",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE NETWORK",
+          "href": "/network",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE BROTHERHOOD",
+          "href": "/brotherhood",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "APPLY →",
+          "href": "/#tiers",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "button",
+          "text": "",
+          "href": "",
+          "visible": true,
+          "rect": {
+            "x": 299,
+            "y": 10.390625,
+            "w": 44,
+            "h": 44
+          },
+          "color": "rgb(0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "button",
+          "text": "×",
+          "href": "",
+          "visible": true,
+          "rect": {
+            "x": 299,
+            "y": 24,
+            "w": 44,
+            "h": 44
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "HOME",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 150.4375,
+            "y": 286,
+            "w": 74.09375,
+            "h": 42
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SALON",
+          "href": "/salon",
+          "visible": true,
+          "rect": {
+            "x": 146.03125,
+            "y": 352,
+            "w": 82.90625,
+            "h": 42
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE NETWORK",
+          "href": "/network",
+          "visible": true,
+          "rect": {
+            "x": 96.375,
+            "y": 418,
+            "w": 182.21875,
+            "h": 42
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE BROTHERHOOD",
+          "href": "/brotherhood",
+          "visible": true,
+          "rect": {
+            "x": 62.78125,
+            "y": 484,
+            "w": 249.421875,
+            "h": 42
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "@TE.MADRID",
+          "href": "https://www.instagram.com/te.madrid",
+          "visible": true,
+          "rect": {
+            "x": 86.84375,
+            "y": 508.40625,
+            "w": 201.296875,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 151.5,
+            "y": 906.78125,
+            "w": 72,
+            "h": 72
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "@te.madrid",
+          "href": "https://www.instagram.com/te.madrid",
+          "visible": true,
+          "rect": {
+            "x": 138.4375,
+            "y": 1010.78125,
+            "w": 98.125,
+            "h": 44
+          },
+          "color": "rgb(122, 112, 104)",
+          "borderColor": "rgb(122, 112, 104)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "You're in.",
+          "rect": {
+            "x": 125.125,
+            "y": 221.203125,
+            "width": 124.75,
+            "height": 35.203125,
+            "top": 221.203125,
+            "right": 249.875,
+            "bottom": 256.40625,
+            "left": 125.125
+          }
+        }
+      ],
+      "doc": {
+        "scrollWidth": 375,
+        "clientWidth": 375,
+        "scrollHeight": 1148,
+        "clientHeight": 812
+      },
+      "overflowing": [],
+      "bodyText": "× HOME SALON THE NETWORK THE BROTHERHOOD You're in. Your confirmation will be sent to your email shortly. If you have any questions or don't receive your confirmation within 24 hours, reach us on Instagram. @TE.MADRID We'll see you on 29 May. @te.madrid © 2026 The Enlightenment. All rights reserved."
+    },
+    "errors": []
+  },
+  "azul-tablet": {
+    "info": {
+      "navCount": 0,
+      "navs": [],
+      "footerCount": 1,
+      "footers": [
+        {
+          "text": "@te.madrid © 2026 The Enlightenment. All rights reserved.",
+          "rect": {
+            "x": 0,
+            "y": 6168.875,
+            "width": 768,
+            "height": 267.390625,
+            "top": 6168.875,
+            "right": 768,
+            "bottom": 6436.265625,
+            "left": 0
+          },
+          "visible": true
+        }
+      ],
+      "videos": [
+        {
+          "src": "http://localhost:3000/heroloop.mp4",
+          "poster": "http://localhost:3000/te-1.jpeg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true,
+          "playsInline": true,
+          "paused": false,
+          "readyState": 4,
+          "videoWidth": 1920,
+          "videoHeight": 960,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 1024,
+            "top": 0,
+            "right": 768,
+            "bottom": 1024,
+            "left": 0
+          },
+          "controls": false
+        }
+      ],
+      "buttons": [
+        {
+          "tag": "a",
+          "text": "SECURE YOUR SEAT → €300",
+          "href": "#secure",
+          "visible": true,
+          "rect": {
+            "x": 239.46875,
+            "y": 850.75,
+            "w": 289.0625,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "button",
+          "text": "",
+          "href": "",
+          "visible": true,
+          "rect": {
+            "x": 34,
+            "y": 1198.640625,
+            "w": 700,
+            "h": 392
+          },
+          "color": "rgb(0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SECURE YOUR SEAT →",
+          "href": "https://buy.stripe.com/28EcN501L73W2c90ula7C0d",
+          "visible": true,
+          "rect": {
+            "x": 416,
+            "y": 4937.78125,
+            "w": 260,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SECURE YOUR SEAT → €300",
+          "href": "https://buy.stripe.com/28EcN501L73W2c90ula7C0d",
+          "visible": true,
+          "rect": {
+            "x": 235.46875,
+            "y": 6041.703125,
+            "w": 297.0625,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 269.453125,
+            "y": 6217.875,
+            "w": 229.078125,
+            "h": 72
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "@te.madrid",
+          "href": "https://www.instagram.com/te.madrid",
+          "visible": true,
+          "rect": {
+            "x": 334.9375,
+            "y": 6321.875,
+            "w": 98.125,
+            "h": 44
+          },
+          "color": "rgb(122, 112, 104)",
+          "borderColor": "rgb(122, 112, 104)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "GENTLEMEN DON'T FOLLOW STANDARDS. THEY SET THEM.",
+          "rect": {
+            "x": -211.125,
+            "y": 713.875,
+            "width": 1190.25,
+            "height": 40.3125,
+            "top": 713.875,
+            "right": 979.125,
+            "bottom": 754.1875,
+            "left": -211.125
+          }
+        },
+        {
+          "level": "H2",
+          "text": "Two minutes with Tom & Maarten.",
+          "rect": {
+            "x": 32,
+            "y": 1132.390625,
+            "width": 704,
+            "height": 32.25,
+            "top": 1132.390625,
+            "right": 736,
+            "bottom": 1164.640625,
+            "left": 32
+          }
+        },
+        {
+          "level": "H2",
+          "text": "One evening. One standard.",
+          "rect": {
+            "x": 64,
+            "y": 1861.4375,
+            "width": 256,
+            "height": 88.3125,
+            "top": 1861.4375,
+            "right": 320,
+            "bottom": 1949.75,
+            "left": 64
+          }
+        },
+        {
+          "level": "H2",
+          "text": "Built for founders who are done with the wrong rooms.",
+          "rect": {
+            "x": 97.109375,
+            "y": 2980.5,
+            "width": 573.765625,
+            "height": 32.25,
+            "top": 2980.5,
+            "right": 670.875,
+            "bottom": 3012.75,
+            "left": 97.109375
+          }
+        },
+        {
+          "level": "H2",
+          "text": "The programme.",
+          "rect": {
+            "x": 32,
+            "y": 3760.53125,
+            "width": 704,
+            "height": 32.25,
+            "top": 3760.53125,
+            "right": 736,
+            "bottom": 3792.78125,
+            "left": 32
+          }
+        },
+        {
+          "level": "H2",
+          "text": "We live by three principles.",
+          "rect": {
+            "x": 32,
+            "y": 5265.09375,
+            "width": 704,
+            "height": 32.25,
+            "top": 5265.09375,
+            "right": 736,
+            "bottom": 5297.34375,
+            "left": 32
+          }
+        },
+        {
+          "level": "H2",
+          "text": "Our Three Pillars",
+          "rect": {
+            "x": 31,
+            "y": 5458.734375,
+            "width": 1,
+            "height": 1,
+            "top": 5458.734375,
+            "right": 32,
+            "bottom": 5459.734375,
+            "left": 31
+          }
+        },
+        {
+          "level": "H3",
+          "text": "OWNERSHIP",
+          "rect": {
+            "x": 96,
+            "y": 5557.171875,
+            "width": 124.59375,
+            "height": 16.3125,
+            "top": 5557.171875,
+            "right": 220.59375,
+            "bottom": 5573.484375,
+            "left": 96
+          }
+        },
+        {
+          "level": "H3",
+          "text": "REASON",
+          "rect": {
+            "x": 360.75,
+            "y": 5557.171875,
+            "width": 82.78125,
+            "height": 16.3125,
+            "top": 5557.171875,
+            "right": 443.53125,
+            "bottom": 5573.484375,
+            "left": 360.75
+          }
+        },
+        {
+          "level": "H3",
+          "text": "POTENTIAL",
+          "rect": {
+            "x": 583.6875,
+            "y": 5557.171875,
+            "width": 119.015625,
+            "height": 16.3125,
+            "top": 5557.171875,
+            "right": 702.703125,
+            "bottom": 5573.484375,
+            "left": 583.6875
+          }
+        },
+        {
+          "level": "H2",
+          "text": "50 seats. One standard.",
+          "rect": {
+            "x": 252,
+            "y": 5911.859375,
+            "width": 264,
+            "height": 32.25,
+            "top": 5911.859375,
+            "right": 516,
+            "bottom": 5944.109375,
+            "left": 252
+          }
+        }
+      ],
+      "doc": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "scrollHeight": 6436,
+        "clientHeight": 1024
+      },
+      "overflowing": [
+        {
+          "tag": "h1",
+          "cls": "HeroVideo-module__yzSnYa__headline",
+          "right": 979.125,
+          "width": 1190.25,
+          "text": "GENTLEMEN DON'T FOLLOW STANDARDS. THEY S"
+        }
+      ],
+      "bodyText": "GENTLEMEN DON'T FOLLOW STANDARDS. THEY SET THEM. An evening to illuminate ideas, capital & connection. SECURE YOUR SEAT → €300 WATCH BEFORE YOU DECIDE. Two minutes with Tom & Maarten. Two minutes with Tom & Maarten. What this night is — and who it's for. One evening. One standard. Salón Azul is a jewel-box of deep navy velvet, gilded mirrors and fireplaces. Antique portraits watch over Chesterfield sofas. A room built for the kind of conversation most rooms can't hold. Fifty founders. One standing reception. Three curated speaker moments. Open bar. Jazz. A suit. No small talk, no spectators. Attend once. Decide what kind of man you are. DATE Thursday 29 May 2026 TIME 19:30 – 23:00 VENUE Salón Azul · Only You Madrid · C/ Barquillo, 21 DRESS Suit required. No ties. CAPACITY 50 founders Pre-event podcast taping at the venue · 18:00–18:45 · members only. Built for founders who are done with the wrong rooms. Three men walk into Salón Azul. These are the three. I THE ISOLATED You’ve built the business. The peers you had when you started can no longer hold the conversation. You need a room that can. II THE IDENTITY The suit, the standard, the posture — these aren’t aesthetics to you. They’re how you move. You want a room that matches. III THE BROTHERHOOD You’re tired of transactional networking. You want a few men, met in person, who will still be in your life in ten years. The programme. A night engineered for momentum. 19:30–19:50 Arrival & personal welcome · first drink served 20:00–20:05 Opening — Tom & Maarten frame the night 20:05–20:10 Speaker I — Tom sets the tone 20:10–20:50 First Connection Block — guided networking 20:50–21:00 Speaker II — sponsor insight 21:00–22:20 Open networking — peak energy · bar active 22:20–22:30 Speaker III + collective toast 22:30–23:00 Soft close WHAT'S INCLUDED 01 Open bar · welcome cocktail or whisky on arrival 02 Three curated speaker moments 03 Guided connection blocks 04 Standing reception in Salón Azul — jazz, fireplaces, Chesterfield sofas 05 Eligibility to apply for The Network INVESTMENT €300 ONE EVENING · SALON 06 50 seats · limited release SECURE YOUR SEAT → Secure checkout · Stripe · €300 · EUR We live by three principles. Suit required. No ties. No small talk. No spectators. Our Three Pillars I OWNERSHIP We own the outcome. Every man here is the author of his life. II REASON Clarity over chaos. Every conversation is deliberate. III POTENTIAL We hold each other to the highest standard. Brotherhood demands it. 50 seats. One standard. Thursday 29 May · Salón Azul · Madrid. SECURE YOUR SEAT → €300 @te.madrid © 2026 The Enlightenment. All rights reserved."
+    },
+    "errors": []
+  },
+  "confirmed-tablet": {
+    "info": {
+      "navCount": 2,
+      "navs": [
+        {
+          "tag": "nav",
+          "classes": "Nav-module__pauaAq__nav ",
+          "text": "SALON THE NETWORK THE BROTHERHOOD APPLY →",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 768,
+            "height": 97,
+            "top": 0,
+            "right": 768,
+            "bottom": 97,
+            "left": 0
+          },
+          "visible": true
+        },
+        {
+          "tag": "nav",
+          "classes": "Nav-module__pauaAq__drawerLinks",
+          "text": "HOME SALON THE NETWORK THE BROTHERHOOD",
+          "rect": {
+            "x": 204.421875,
+            "y": 355.03125,
+            "width": 359.15625,
+            "height": 313.9375,
+            "top": 355.03125,
+            "right": 563.578125,
+            "bottom": 668.96875,
+            "left": 204.421875
+          },
+          "visible": true
+        }
+      ],
+      "footerCount": 1,
+      "footers": [
+        {
+          "text": "@te.madrid © 2026 The Enlightenment. All rights reserved.",
+          "rect": {
+            "x": 0,
+            "y": 1072.03125,
+            "width": 768,
+            "height": 267.390625,
+            "top": 1072.03125,
+            "right": 768,
+            "bottom": 1339.421875,
+            "left": 0
+          },
+          "visible": true
+        }
+      ],
+      "videos": [],
+      "buttons": [
+        {
+          "tag": "a",
+          "text": "",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 32,
+            "y": 20,
+            "w": 56,
+            "h": 56
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SALON",
+          "href": "/salon",
+          "visible": true,
+          "rect": {
+            "x": 136.96875,
+            "y": 38.203125,
+            "w": 54.421875,
+            "h": 19.59375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE NETWORK",
+          "href": "/network",
+          "visible": true,
+          "rect": {
+            "x": 239.390625,
+            "y": 38.203125,
+            "w": 120.953125,
+            "h": 19.59375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE BROTHERHOOD",
+          "href": "/brotherhood",
+          "visible": true,
+          "rect": {
+            "x": 408.34375,
+            "y": 38.203125,
+            "w": 166.03125,
+            "h": 19.59375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "APPLY →",
+          "href": "/#tiers",
+          "visible": true,
+          "rect": {
+            "x": 623.34375,
+            "y": 29.203125,
+            "w": 112.65625,
+            "h": 37.59375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "button",
+          "text": "",
+          "href": "",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "color": "rgb(0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "button",
+          "text": "×",
+          "href": "",
+          "visible": true,
+          "rect": {
+            "x": 692,
+            "y": 24,
+            "w": 44,
+            "h": 44
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "HOME",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 330.65625,
+            "y": 355.03125,
+            "w": 106.6875,
+            "h": 60.484375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SALON",
+          "href": "/salon",
+          "visible": true,
+          "rect": {
+            "x": 324.3125,
+            "y": 439.515625,
+            "w": 119.375,
+            "h": 60.484375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE NETWORK",
+          "href": "/network",
+          "visible": true,
+          "rect": {
+            "x": 252.796875,
+            "y": 524,
+            "w": 262.390625,
+            "h": 60.484375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE BROTHERHOOD",
+          "href": "/brotherhood",
+          "visible": true,
+          "rect": {
+            "x": 204.421875,
+            "y": 608.484375,
+            "w": 359.15625,
+            "h": 60.484375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "@TE.MADRID",
+          "href": "https://www.instagram.com/te.madrid",
+          "visible": true,
+          "rect": {
+            "x": 283.34375,
+            "y": 627.53125,
+            "w": 201.296875,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 348,
+            "y": 1121.03125,
+            "w": 72,
+            "h": 72
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "@te.madrid",
+          "href": "https://www.instagram.com/te.madrid",
+          "visible": true,
+          "rect": {
+            "x": 334.9375,
+            "y": 1225.03125,
+            "w": 98.125,
+            "h": 44
+          },
+          "color": "rgb(122, 112, 104)",
+          "borderColor": "rgb(122, 112, 104)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "You're in.",
+          "rect": {
+            "x": 275.125,
+            "y": 314.09375,
+            "width": 217.75,
+            "height": 61.4375,
+            "top": 314.09375,
+            "right": 492.875,
+            "bottom": 375.53125,
+            "left": 275.125
+          }
+        }
+      ],
+      "doc": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "scrollHeight": 1339,
+        "clientHeight": 1024
+      },
+      "overflowing": [],
+      "bodyText": "SALON THE NETWORK THE BROTHERHOOD APPLY → × HOME SALON THE NETWORK THE BROTHERHOOD You're in. Your confirmation will be sent to your email shortly. If you have any questions or don't receive your confirmation within 24 hours, reach us on Instagram. @TE.MADRID We'll see you on 29 May. @te.madrid © 2026 The Enlightenment. All rights reserved."
+    },
+    "errors": []
+  },
+  "azul-desktop": {
+    "info": {
+      "navCount": 0,
+      "navs": [],
+      "footerCount": 1,
+      "footers": [
+        {
+          "text": "@te.madrid © 2026 The Enlightenment. All rights reserved.",
+          "rect": {
+            "x": 0,
+            "y": 6737.84375,
+            "width": 1440,
+            "height": 267.390625,
+            "top": 6737.84375,
+            "right": 1440,
+            "bottom": 7005.234375,
+            "left": 0
+          },
+          "visible": true
+        }
+      ],
+      "videos": [
+        {
+          "src": "http://localhost:3000/heroloop.mp4",
+          "poster": "http://localhost:3000/te-1.jpeg",
+          "autoplay": true,
+          "loop": true,
+          "muted": true,
+          "playsInline": true,
+          "paused": false,
+          "readyState": 4,
+          "videoWidth": 1920,
+          "videoHeight": 960,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 0
+          },
+          "controls": false
+        }
+      ],
+      "buttons": [
+        {
+          "tag": "a",
+          "text": "SECURE YOUR SEAT → €300",
+          "href": "#secure",
+          "visible": true,
+          "rect": {
+            "x": 575.46875,
+            "y": 741.625,
+            "w": 289.0625,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "button",
+          "text": "",
+          "href": "",
+          "visible": true,
+          "rect": {
+            "x": 242,
+            "y": 1143.5,
+            "w": 956,
+            "h": 536
+          },
+          "color": "rgb(0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SECURE YOUR SEAT →",
+          "href": "https://buy.stripe.com/28EcN501L73W2c90ula7C0d",
+          "visible": true,
+          "rect": {
+            "x": 752,
+            "y": 5275.40625,
+            "w": 260,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SECURE YOUR SEAT → €300",
+          "href": "https://buy.stripe.com/28EcN501L73W2c90ula7C0d",
+          "visible": true,
+          "rect": {
+            "x": 571.46875,
+            "y": 6559.46875,
+            "w": 297.0625,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 605.453125,
+            "y": 6786.84375,
+            "w": 229.078125,
+            "h": 72
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "@te.madrid",
+          "href": "https://www.instagram.com/te.madrid",
+          "visible": true,
+          "rect": {
+            "x": 670.9375,
+            "y": 6890.84375,
+            "w": 98.125,
+            "h": 44
+          },
+          "color": "rgb(122, 112, 104)",
+          "borderColor": "rgb(122, 112, 104)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "GENTLEMEN DON'T FOLLOW STANDARDS. THEY SET THEM.",
+          "rect": {
+            "x": -395.859375,
+            "y": 537.75,
+            "width": 2231.71875,
+            "height": 75.59375,
+            "top": 537.75,
+            "right": 1835.859375,
+            "bottom": 613.34375,
+            "left": -395.859375
+          }
+        },
+        {
+          "level": "H2",
+          "text": "Two minutes with Tom & Maarten.",
+          "rect": {
+            "x": 240,
+            "y": 1059.59375,
+            "width": 960,
+            "height": 49.90625,
+            "top": 1059.59375,
+            "right": 1200,
+            "bottom": 1109.5,
+            "left": 240
+          }
+        },
+        {
+          "level": "H2",
+          "text": "One evening. One standard.",
+          "rect": {
+            "x": 184,
+            "y": 2001.5,
+            "width": 472,
+            "height": 147.1875,
+            "top": 2001.5,
+            "right": 656,
+            "bottom": 2148.6875,
+            "left": 184
+          }
+        },
+        {
+          "level": "H2",
+          "text": "Built for founders who are done with the wrong rooms.",
+          "rect": {
+            "x": 276.015625,
+            "y": 3153.84375,
+            "width": 887.953125,
+            "height": 49.90625,
+            "top": 3153.84375,
+            "right": 1163.96875,
+            "bottom": 3203.75,
+            "left": 276.015625
+          }
+        },
+        {
+          "level": "H2",
+          "text": "The programme.",
+          "rect": {
+            "x": 340,
+            "y": 3934.734375,
+            "width": 760,
+            "height": 49.90625,
+            "top": 3934.734375,
+            "right": 1100,
+            "bottom": 3984.640625,
+            "left": 340
+          }
+        },
+        {
+          "level": "H2",
+          "text": "We live by three principles.",
+          "rect": {
+            "x": 32,
+            "y": 5628.171875,
+            "width": 1376,
+            "height": 49.90625,
+            "top": 5628.171875,
+            "right": 1408,
+            "bottom": 5678.078125,
+            "left": 32
+          }
+        },
+        {
+          "level": "H2",
+          "text": "Our Three Pillars",
+          "rect": {
+            "x": 119,
+            "y": 5907.46875,
+            "width": 1,
+            "height": 1,
+            "top": 5907.46875,
+            "right": 120,
+            "bottom": 5908.46875,
+            "left": 119
+          }
+        },
+        {
+          "level": "H3",
+          "text": "OWNERSHIP",
+          "rect": {
+            "x": 257.359375,
+            "y": 6024.46875,
+            "width": 124.59375,
+            "height": 16.3125,
+            "top": 6024.46875,
+            "right": 381.953125,
+            "bottom": 6040.78125,
+            "left": 257.359375
+          }
+        },
+        {
+          "level": "H3",
+          "text": "REASON",
+          "rect": {
+            "x": 678.59375,
+            "y": 6024.46875,
+            "width": 82.78125,
+            "height": 16.3125,
+            "top": 6024.46875,
+            "right": 761.375,
+            "bottom": 6040.78125,
+            "left": 678.59375
+          }
+        },
+        {
+          "level": "H3",
+          "text": "POTENTIAL",
+          "rect": {
+            "x": 1060.8125,
+            "y": 6024.46875,
+            "width": 119.015625,
+            "height": 16.3125,
+            "top": 6024.46875,
+            "right": 1179.828125,
+            "bottom": 6040.78125,
+            "left": 1060.8125
+          }
+        },
+        {
+          "level": "H2",
+          "text": "50 seats. One standard.",
+          "rect": {
+            "x": 515.71875,
+            "y": 6395.171875,
+            "width": 408.5625,
+            "height": 49.90625,
+            "top": 6395.171875,
+            "right": 924.28125,
+            "bottom": 6445.078125,
+            "left": 515.71875
+          }
+        }
+      ],
+      "doc": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "scrollHeight": 7005,
+        "clientHeight": 900
+      },
+      "overflowing": [
+        {
+          "tag": "h1",
+          "cls": "HeroVideo-module__yzSnYa__headline",
+          "right": 1835.859375,
+          "width": 2231.71875,
+          "text": "GENTLEMEN DON'T FOLLOW STANDARDS. THEY S"
+        }
+      ],
+      "bodyText": "GENTLEMEN DON'T FOLLOW STANDARDS. THEY SET THEM. An evening to illuminate ideas, capital & connection. SECURE YOUR SEAT → €300 WATCH BEFORE YOU DECIDE. Two minutes with Tom & Maarten. Two minutes with Tom & Maarten. What this night is — and who it's for. One evening. One standard. Salón Azul is a jewel-box of deep navy velvet, gilded mirrors and fireplaces. Antique portraits watch over Chesterfield sofas. A room built for the kind of conversation most rooms can't hold. Fifty founders. One standing reception. Three curated speaker moments. Open bar. Jazz. A suit. No small talk, no spectators. Attend once. Decide what kind of man you are. DATE Thursday 29 May 2026 TIME 19:30 – 23:00 VENUE Salón Azul · Only You Madrid · C/ Barquillo, 21 DRESS Suit required. No ties. CAPACITY 50 founders Pre-event podcast taping at the venue · 18:00–18:45 · members only. Built for founders who are done with the wrong rooms. Three men walk into Salón Azul. These are the three. I THE ISOLATED You’ve built the business. The peers you had when you started can no longer hold the conversation. You need a room that can. II THE IDENTITY The suit, the standard, the posture — these aren’t aesthetics to you. They’re how you move. You want a room that matches. III THE BROTHERHOOD You’re tired of transactional networking. You want a few men, met in person, who will still be in your life in ten years. The programme. A night engineered for momentum. 19:30–19:50 Arrival & personal welcome · first drink served 20:00–20:05 Opening — Tom & Maarten frame the night 20:05–20:10 Speaker I — Tom sets the tone 20:10–20:50 First Connection Block — guided networking 20:50–21:00 Speaker II — sponsor insight 21:00–22:20 Open networking — peak energy · bar active 22:20–22:30 Speaker III + collective toast 22:30–23:00 Soft close WHAT'S INCLUDED 01 Open bar · welcome cocktail or whisky on arrival 02 Three curated speaker moments 03 Guided connection blocks 04 Standing reception in Salón Azul — jazz, fireplaces, Chesterfield sofas 05 Eligibility to apply for The Network INVESTMENT €300 ONE EVENING · SALON 06 50 seats · limited release SECURE YOUR SEAT → Secure checkout · Stripe · €300 · EUR We live by three principles. Suit required. No ties. No small talk. No spectators. Our Three Pillars I OWNERSHIP We own the outcome. Every man here is the author of his life. II REASON Clarity over chaos. Every conversation is deliberate. III POTENTIAL We hold each other to the highest standard. Brotherhood demands it. 50 seats. One standard. Thursday 29 May · Salón Azul · Madrid. SECURE YOUR SEAT → €300 @te.madrid © 2026 The Enlightenment. All rights reserved."
+    },
+    "errors": []
+  },
+  "confirmed-desktop": {
+    "info": {
+      "navCount": 2,
+      "navs": [
+        {
+          "tag": "nav",
+          "classes": "Nav-module__pauaAq__nav ",
+          "text": "SALON THE NETWORK THE BROTHERHOOD APPLY →",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 97,
+            "top": 0,
+            "right": 1440,
+            "bottom": 97,
+            "left": 0
+          },
+          "visible": true
+        },
+        {
+          "tag": "nav",
+          "classes": "Nav-module__pauaAq__drawerLinks",
+          "text": "HOME SALON THE NETWORK THE BROTHERHOOD",
+          "rect": {
+            "x": 501.765625,
+            "y": 267,
+            "width": 436.46875,
+            "height": 366,
+            "top": 267,
+            "right": 938.234375,
+            "bottom": 633,
+            "left": 501.765625
+          },
+          "visible": true
+        }
+      ],
+      "footerCount": 1,
+      "footers": [
+        {
+          "text": "@te.madrid © 2026 The Enlightenment. All rights reserved.",
+          "rect": {
+            "x": 0,
+            "y": 1032.15625,
+            "width": 1440,
+            "height": 267.390625,
+            "top": 1032.15625,
+            "right": 1440,
+            "bottom": 1299.546875,
+            "left": 0
+          },
+          "visible": true
+        }
+      ],
+      "videos": [],
+      "buttons": [
+        {
+          "tag": "a",
+          "text": "",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 32,
+            "y": 20,
+            "w": 56,
+            "h": 56
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SALON",
+          "href": "/salon",
+          "visible": true,
+          "rect": {
+            "x": 472.96875,
+            "y": 38.203125,
+            "w": 54.421875,
+            "h": 19.59375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE NETWORK",
+          "href": "/network",
+          "visible": true,
+          "rect": {
+            "x": 575.390625,
+            "y": 38.203125,
+            "w": 120.953125,
+            "h": 19.59375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE BROTHERHOOD",
+          "href": "/brotherhood",
+          "visible": true,
+          "rect": {
+            "x": 744.34375,
+            "y": 38.203125,
+            "w": 166.03125,
+            "h": 19.59375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "APPLY →",
+          "href": "/#tiers",
+          "visible": true,
+          "rect": {
+            "x": 1295.34375,
+            "y": 29.203125,
+            "w": 112.65625,
+            "h": 37.59375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "button",
+          "text": "",
+          "href": "",
+          "visible": false,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "w": 0,
+            "h": 0
+          },
+          "color": "rgb(0, 0, 0)",
+          "borderColor": "rgb(0, 0, 0)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "button",
+          "text": "×",
+          "href": "",
+          "visible": true,
+          "rect": {
+            "x": 1364,
+            "y": 24,
+            "w": 44,
+            "h": 44
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "HOME",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 655.171875,
+            "y": 267,
+            "w": 129.65625,
+            "h": 73.5
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "SALON",
+          "href": "/salon",
+          "visible": true,
+          "rect": {
+            "x": 647.453125,
+            "y": 364.5,
+            "w": 145.078125,
+            "h": 73.5
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE NETWORK",
+          "href": "/network",
+          "visible": true,
+          "rect": {
+            "x": 560.5625,
+            "y": 462,
+            "w": 318.875,
+            "h": 73.5
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "THE BROTHERHOOD",
+          "href": "/brotherhood",
+          "visible": true,
+          "rect": {
+            "x": 501.765625,
+            "y": 559.5,
+            "w": 436.46875,
+            "h": 73.5
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "@TE.MADRID",
+          "href": "https://www.instagram.com/te.madrid",
+          "visible": true,
+          "rect": {
+            "x": 619.34375,
+            "y": 620,
+            "w": 201.296875,
+            "h": 50.375
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(184, 146, 74)",
+          "borderWidth": "1px",
+          "textTransform": "uppercase",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "/",
+          "visible": true,
+          "rect": {
+            "x": 684,
+            "y": 1081.15625,
+            "w": 72,
+            "h": 72
+          },
+          "color": "rgb(245, 240, 234)",
+          "borderColor": "rgb(245, 240, 234)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "tag": "a",
+          "text": "@te.madrid",
+          "href": "https://www.instagram.com/te.madrid",
+          "visible": true,
+          "rect": {
+            "x": 670.9375,
+            "y": 1185.15625,
+            "w": 98.125,
+            "h": 44
+          },
+          "color": "rgb(122, 112, 104)",
+          "borderColor": "rgb(122, 112, 104)",
+          "borderWidth": "0px",
+          "textTransform": "none",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      ],
+      "headings": [
+        {
+          "level": "H1",
+          "text": "You're in.",
+          "rect": {
+            "x": 521.53125,
+            "y": 256,
+            "width": 396.9375,
+            "height": 112,
+            "top": 256,
+            "right": 918.46875,
+            "bottom": 368,
+            "left": 521.53125
+          }
+        }
+      ],
+      "doc": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "scrollHeight": 1300,
+        "clientHeight": 900
+      },
+      "overflowing": [],
+      "bodyText": "SALON THE NETWORK THE BROTHERHOOD APPLY → × HOME SALON THE NETWORK THE BROTHERHOOD You're in. Your confirmation will be sent to your email shortly. If you have any questions or don't receive your confirmation within 24 hours, reach us on Instagram. @TE.MADRID We'll see you on 29 May. @te.madrid © 2026 The Enlightenment. All rights reserved."
+    },
+    "errors": []
+  }
+}
