@@ -1,9 +1,5 @@
 'use client'
 
-// MetaPixel.tsx  -  Client component for Meta Pixel base code
-// Reads NEXT_PUBLIC_META_PIXEL_ID  -  self-disables when env var is empty
-// TODO: uncomment tracking calls below when pixel ID is confirmed and ad campaigns are live
-
 import { usePathname } from 'next/navigation'
 import { useEffect } from 'react'
 import Script from 'next/script'
@@ -15,22 +11,15 @@ export default function MetaPixel() {
 
   useEffect(() => {
     if (!PIXEL_ID) return
-    // TODO: fire page view on each route change
-    // fbq('track', 'PageView')
+    if (typeof window.fbq === 'function') {
+      window.fbq('track', 'PageView')
+    }
   }, [pathname])
 
-  // Guard: only allow numeric pixel IDs to prevent injection via env var
   if (!PIXEL_ID || !/^\d+$/.test(PIXEL_ID)) return null
 
   return (
     <>
-      {/*
-        SECURITY NOTE: This inline script requires 'unsafe-inline' in the CSP script-src directive.
-        The PIXEL_ID is validated as a numeric string before use (see guard above)  -  this prevents
-        XSS injection via the env var. The 'unsafe-inline' exception is acceptable for this
-        marketing site as there is no user-generated content that could be injected.
-        When Meta Pixel is activated, ensure NEXT_PUBLIC_META_PIXEL_ID is a verified pixel ID.
-      */}
       <Script
         id="meta-pixel-base"
         strategy="afterInteractive"
@@ -45,7 +34,7 @@ export default function MetaPixel() {
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '${PIXEL_ID}');
-            // TODO: fbq('track', 'PageView');
+            fbq('track', 'PageView');
           `,
         }}
       />

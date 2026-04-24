@@ -229,42 +229,7 @@ export default function AzulPage() {
         </div>
       </section>
 
-      {/* ── 8. Programme (INVERTED - ivory band) ─────────────────────────────── */}
-      <section className={s.agendaSection} aria-label="Programme">
-        <div className={s.agendaInner}>
-          <ScrollReveal>
-            <div className={s.sectionHeader}>
-              <p className={s.eyebrow}>◆ THE EVENING</p>
-              <h2 className={s.sectionHeadline}>The programme.</h2>
-              <p className={s.sectionSubline}>A night engineered for momentum.</p>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal delay={100}>
-            <div className={s.agendaTable} role="list">
-              {agenda.map((row) => (
-                <div key={row.time} className={s.agendaRow} role="listitem">
-                  <span className={s.agendaTime}>{row.time}</span>
-                  <span className={s.agendaMoment}>{row.moment}</span>
-                </div>
-              ))}
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
 
-
-      {/* ── 10. Final CTA ────────────────────────────────────────────────────── */}
-      <section className={s.finalCta} aria-label="Final call to action">
-        <div className={s.finalCtaInner}>
-          <ScrollReveal>
-            <h2 className={s.finalCtaHeadline}>50 seats. One standard.</h2>
-            <p className={s.finalCtaSubline}>Thursday 29 May - Salon Azul - Madrid.</p>
-            <a href={STRIPE} className={s.stripeBtn} data-cta="azul-final">
-              <span className={s.stripeBtnText}>SECURE YOUR SEAT →</span>
-            </a>
-          </ScrollReveal>
-        </div>
-      </section>
 
     </div>
   )

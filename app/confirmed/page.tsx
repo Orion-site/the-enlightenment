@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import styles from './confirmed.module.css'
+import TrackPurchase from '@/components/TrackPurchase'
 
 export const metadata: Metadata = {
   title: "You're in  -  The Enlightenment Madrid",
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
 export default function ConfirmedPage() {
   return (
     <>
+      <TrackPurchase />
       <div className={styles.page}>
         <div className={styles.inner}>
           <p className={styles.eyebrow}>◆ CONFIRMED</p>
