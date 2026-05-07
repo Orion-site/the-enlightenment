@@ -95,7 +95,7 @@ export default function AzulPage() {
             <h2 className={s.vslHeadline}>Two minutes with Tom & Maarten.</h2>
           </ScrollReveal>
           <ScrollReveal delay={100}>
-            <VideoPlayer src="/azul.mp4" poster="/te-3.jpeg" label="Play - Salon 06" modal />
+            <VideoPlayer src="/azul.mp4" poster="/te-3.jpeg" label="Play - Salon 06" />
           </ScrollReveal>
         </div>
       </section>

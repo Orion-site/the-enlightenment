@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, Libre_Baskerville } from 'next/font/google'
 import '@/styles/globals.css'
+import 'plyr/dist/plyr.css'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 // MetaPixel self-disables when NEXT_PUBLIC_META_PIXEL_ID is not set

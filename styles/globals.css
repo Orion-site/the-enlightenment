@@ -211,3 +211,22 @@ button {
     transform: none !important;
   }
 }
+
+/* ─── Plyr gold theme ───────────────────────────────────────────────────────── */
+
+:root {
+  --plyr-color-main: #b8924a;
+  --plyr-range-fill-background: #b8924a;
+  --plyr-range-thumb-background: #d4aa6a;
+  --plyr-range-thumb-shadow: 0 0 0 2px rgba(184, 146, 74, 0.3);
+  --plyr-video-control-color: #b8924a;
+  --plyr-video-control-color-hover: #d4aa6a;
+  --plyr-video-control-background-hover: rgba(10, 9, 7, 0.7);
+  --plyr-control-icon-size: 18px;
+  --plyr-font-size-base: 13px;
+  --plyr-font-size-time: 13px;
+  --plyr-video-background: #0a0907;
+  --plyr-tooltip-background: #0a0907;
+  --plyr-tooltip-color: #b8924a;
+  --plyr-tooltip-border-color: #7a5c28;
+}

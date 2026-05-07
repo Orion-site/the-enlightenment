@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import styles from '@/styles/VideoPlayer.module.css'
 
@@ -18,16 +18,38 @@ export default function VideoPlayer({
   label = 'Play video',
 }: VideoPlayerProps) {
   const [playing, setPlaying] = useState(false)
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const plyrRef = useRef<unknown>(null)
+
+  useEffect(() => {
+    if (!playing || !videoRef.current) return
+
+    let destroyed = false
+
+    import('plyr').then(({ default: Plyr }) => {
+      if (destroyed || !videoRef.current) return
+      plyrRef.current = new Plyr(videoRef.current, {
+        controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
+        autoplay: true,
+      })
+    })
+
+    return () => {
+      destroyed = true
+      const p = plyrRef.current as { destroy?: () => void } | null
+      p?.destroy?.()
+      plyrRef.current = null
+    }
+  }, [playing])
 
   if (playing) {
     return (
       <div className={styles.player}>
         {src && (
           <video
+            ref={videoRef}
             className={styles.inlineVideo}
             src={src}
-            autoPlay
-            controls
             playsInline
             preload="auto"
             poster={poster}
