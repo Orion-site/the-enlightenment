@@ -38,7 +38,7 @@ export default function HomePage() {
           <h2 className={styles.videoSectionTitle}>Recent Brotherhood Salon</h2>
           <ScrollReveal>
             <VideoPlayer
-              src="https://assets.cdn.filesafe.space/hpKwInwbfTwt06Jy5Y9f/media/69cccb21a0e4042cefbb5ce3.mp4"
+              src="/TE VSL 2.mp4"
               poster="/TEtb.png"
               label="Watch  -  The Enlightenment"
             />
