@@ -28,10 +28,12 @@ export default function VideoPlayer({
 
     import('plyr').then(({ default: Plyr }) => {
       if (destroyed || !videoRef.current) return
-      plyrRef.current = new Plyr(videoRef.current, {
+      const player = new Plyr(videoRef.current, {
         controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'fullscreen'],
         autoplay: true,
+        volume: 1,
       })
+      plyrRef.current = player
     })
 
     return () => {

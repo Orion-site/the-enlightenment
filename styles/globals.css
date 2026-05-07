@@ -230,3 +230,19 @@ button {
   --plyr-tooltip-color: #b8924a;
   --plyr-tooltip-border-color: #7a5c28;
 }
+
+/* Mobile: full-width progress bar, hide volume */
+@media (max-width: 767px) {
+  .plyr__controls {
+    flex-wrap: wrap;
+  }
+  .plyr__progress {
+    flex: 0 0 100% !important;
+    order: -1;
+    margin-bottom: 2px;
+  }
+  .plyr__volume,
+  [data-plyr="mute"] {
+    display: none !important;
+  }
+}
